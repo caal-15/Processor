@@ -1,0 +1,57 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date:    07:26:42 11/19/2012 
+-- Design Name: 
+-- Module Name:    DataMem_module - Behavioral 
+-- Project Name: 
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+--
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+entity DataMem_module is
+    Port ( WrEnMem : in  STD_LOGIC;
+           RdEnMem : in  STD_LOGIC;
+			  reset : in std_logic;
+			  clkFPGA : in  std_logic;
+           crd : in  STD_LOGIC_VECTOR (31 downto 0);
+           ALUResult : in  STD_LOGIC_VECTOR (31 downto 0);
+           DataToMem : out  STD_LOGIC_VECTOR (31 downto 0));
+end DataMem_module;
+
+architecture Behavioral of DataMem_module is
+
+type ram_type is array (0 to 31) of STD_LOGIC_VECTOR (31 downto 0);
+
+signal memory : ram_type := (others => x"00000000");
+
+begin
+process (WrEnMem,RdEnMem, reset, clkFPGA, crd, ALUResult) begin
+	if(rising_edge(clkFPGA))then
+			if(reset = '1' or (WrEnMem='0' and RdEnMem='0'))then
+				DataToMem <= (others => '0');
+			elsif(WrEnMem='1' and RdEnMem='0') then
+				memory(conv_integer(ALUResult))<=crd;
+			elsif(RdEnMem='1' and WrEnMem='0') then
+				DataToMem <= memory(conv_integer(ALUResult));
+			end if;
+	end if;
+end process;		
+				
+
+
+
+
+end Behavioral;
+
