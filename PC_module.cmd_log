@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/usuariomac/Core_iDeivid/PC_module.xst" -ofn "C:/Users/usuariomac/Core_iDeivid/PC_module.syr" 
+vhdtdtfi -prj Core_iDeivid -o F:/Documentos/Arquitectura/Processor/PC_module.vhi -module PC_module -template F:/Windows/ISE/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work PC_module.vhd 

@@ -1,0 +1,36 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to F:/Documentos/Arquitectura/Processor/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to F:/Documentos/Arquitectura/Processor/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/ALU_module.vhd" in Library work.
+Entity <alu_module> compiled.
+ERROR:HDLParsers:3313 - "F:/Documentos/Arquitectura/Processor/ALU_module.vhd" Line 22. Undefined symbol 'AL'.  Should it be: ALL?
+ERROR:HDLParsers:1209 - "F:/Documentos/Arquitectura/Processor/ALU_module.vhd" Line 22. AL: Undefined symbol (last report in this block)
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> 
+
+Total memory usage is 206100 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

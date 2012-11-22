@@ -1,0 +1,1 @@
+vhdtdtfi -prj Core_iDeivid -o F:/Documentos/Arquitectura/Processor/ALU_module.vhi -module ALU_module -template F:/Windows/ISE/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ALU_module.vhd 

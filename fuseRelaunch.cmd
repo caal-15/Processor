@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "F:/Documentos/Arquitectura/Processor/tb_ALU_isim_beh.exe" -prj "F:/Documentos/Arquitectura/Processor/tb_ALU_beh.prj" "work.tb_ALU" 

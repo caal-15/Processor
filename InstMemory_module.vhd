@@ -7,7 +7,7 @@ use IEEE.numeric_bit.all;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity InstMemory_module is
-    Port ( clkFPGA : in STD_LOGIC;
+    Port ( 
 		     reset : in STD_LOGIC;
 			  address : in  STD_LOGIC_VECTOR (4 downto 0);
            dataOut : out  STD_LOGIC_VECTOR (31 downto 0));
@@ -42,17 +42,17 @@ signal instruction : rom_type := InitRomFromFile("program2.data");
 
 begin 
 
-process(clkFPGA, reset, address)
+process(reset, address)
 
 begin
 
-	if(rising_edge(clkFPGA))then
-		if(reset = '1')then 
-			dataOut <= (others => '0');
-			else
-			dataOut <= instruction(conv_integer(address));
-		end if;
+	
+	if(reset = '1')then 
+		dataOut <= (others => '0');
+		else
+		dataOut <= instruction(conv_integer(address));
 	end if;
+	
 
 end process;
 end Behavioral;

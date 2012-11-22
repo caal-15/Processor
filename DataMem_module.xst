@@ -1,0 +1,5 @@
+set -tmpdir "F:/Documentos/Arquitectura/Processor/xst/projnav.tmp"
+set -xsthdpdir "F:/Documentos/Arquitectura/Processor/xst"
+elaborate
+-ifn DataMem_module.prj
+-ifmt mixed

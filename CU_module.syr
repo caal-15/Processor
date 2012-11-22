@@ -1,0 +1,410 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: CU_module.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CU_module.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CU_module"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : CU_module
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/CU_module.vhd" in Library work.
+Architecture behavioral of Entity cu_module is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <CU_module> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <CU_module> in library <work> (Architecture <behavioral>).
+Entity <CU_module> analyzed. Unit <CU_module> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <CU_module>.
+    Related source file is "F:/Documentos/Arquitectura/Processor/CU_module.vhd".
+    Found 4x1-bit ROM for signal <RFdest$mux0003>.
+    Found 1-bit register for signal <wren>.
+    Found 2-bit register for signal <PCsource>.
+    Found 8-bit register for signal <ALUOP>.
+    Found 1-bit register for signal <RdEnMem>.
+    Found 1-bit register for signal <WrEnMem>.
+    Found 2-bit register for signal <RFsource>.
+    Found 1-bit register for signal <RFdest>.
+    Found 8-bit 4-to-1 multiplexer for signal <ALUOP$mux0002>.
+    Found 1-bit register for signal <calcicc>.
+    Found 1-bit 16-to-1 multiplexer for signal <calcicc$mux0000> created at line 104.
+    Found 1-bit xor2 for signal <calcicc$xor0000> created at line 131.
+    Found 2-bit 4-to-1 multiplexer for signal <PCsource$mux0006>.
+    Found 2-bit 16-to-1 multiplexer for signal <PCsource$mux0008> created at line 104.
+    Found 2-bit 4-to-1 multiplexer for signal <RFsource$mux0004>.
+    Found 1-bit 4-to-1 multiplexer for signal <wren$mux0005>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  17 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+Unit <CU_module> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 4x1-bit ROM                                           : 1
+# Registers                                            : 8
+ 1-bit register                                        : 5
+ 2-bit register                                        : 2
+ 8-bit register                                        : 1
+# Multiplexers                                         : 6
+ 1-bit 16-to-1 multiplexer                             : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+ 2-bit 16-to-1 multiplexer                             : 1
+ 2-bit 4-to-1 multiplexer                              : 2
+ 8-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <CU_module>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_RFdest_mux0003> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <CU_module> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 4x1-bit ROM                                           : 1
+# Registers                                            : 17
+ Flip-Flops                                            : 17
+# Multiplexers                                         : 6
+ 1-bit 16-to-1 multiplexer                             : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+ 2-bit 16-to-1 multiplexer                             : 1
+ 2-bit 4-to-1 multiplexer                              : 2
+ 8-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <ALUOP_6> (without init value) has a constant value of 0 in block <CU_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALUOP_7> (without init value) has a constant value of 0 in block <CU_module>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <CU_module> ...
+INFO:Xst:2261 - The FF/Latch <WrEnMem> in Unit <CU_module> is equivalent to the following FF/Latch, which will be removed : <ALUOP_5> 
+INFO:Xst:2261 - The FF/Latch <WrEnMem> in Unit <CU_module> is equivalent to the following FF/Latch, which will be removed : <ALUOP_5> 
+INFO:Xst:2261 - The FF/Latch <WrEnMem> in Unit <CU_module> is equivalent to the following FF/Latch, which will be removed : <ALUOP_5> 
+INFO:Xst:2261 - The FF/Latch <WrEnMem> in Unit <CU_module> is equivalent to the following FF/Latch, which will be removed : <ALUOP_5> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CU_module, actual ratio is 0.
+FlipFlop WrEnMem has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 15
+ Flip-Flops                                            : 15
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : CU_module.ngr
+Top Level Output File Name         : CU_module
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 33
+
+Cell Usage :
+# BELS                             : 56
+#      GND                         : 1
+#      LUT2                        : 3
+#      LUT3                        : 15
+#      LUT4                        : 25
+#      LUT4_L                      : 1
+#      MUXF5                       : 8
+#      MUXF6                       : 2
+#      MUXF7                       : 1
+# FlipFlops/Latches                : 15
+#      FD                          : 10
+#      FDE                         : 1
+#      FDR                         : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 32
+#      IBUF                        : 16
+#      OBUF                        : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       26  out of   4656     0%  
+ Number of Slice Flip Flops:              2  out of   9312     0%  
+ Number of 4 input LUTs:                 44  out of   9312     0%  
+ Number of IOs:                          33
+ Number of bonded IOBs:                  33  out of    232    14%  
+    IOB Flip Flops:                      13
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clkFPGA                            | BUFGP                  | 15    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 3.532ns (Maximum Frequency: 283.126MHz)
+   Minimum input arrival time before clock: 6.812ns
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkFPGA'
+  Clock period: 3.532ns (frequency: 283.126MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               3.532ns (Levels of Logic = 4)
+  Source:            calcicc (FF)
+  Destination:       calcicc (FF)
+  Source Clock:      clkFPGA rising
+  Destination Clock: clkFPGA rising
+
+  Data Path: calcicc to calcicc
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.591   0.566  calcicc (calcicc)
+     LUT3:I2->O            1   0.704   0.000  Mmux_calcicc_mux0000_8 (Mmux_calcicc_mux0000_8)
+     MUXF5:I0->O           1   0.321   0.000  Mmux_calcicc_mux0000_6_f5 (Mmux_calcicc_mux0000_6_f5)
+     MUXF6:I0->O           1   0.521   0.000  Mmux_calcicc_mux0000_4_f6 (Mmux_calcicc_mux0000_4_f6)
+     MUXF7:I0->O           1   0.521   0.000  Mmux_calcicc_mux0000_2_f7 (calcicc_mux0000)
+     FDE:D                     0.308          calcicc
+    ----------------------------------------
+    Total                      3.532ns (2.966ns logic, 0.566ns route)
+                                       (84.0% logic, 16.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkFPGA'
+  Total number of paths / destination ports: 200 / 20
+-------------------------------------------------------------------------
+Offset:              6.812ns (Levels of Logic = 5)
+  Source:            OP3<1> (PAD)
+  Destination:       ALUOP_3 (FF)
+  Destination Clock: clkFPGA rising
+
+  Data Path: OP3<1> to ALUOP_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   1.218   1.136  OP3_1_IBUF (OP3_1_IBUF)
+     LUT3:I0->O            1   0.704   0.455  ALUOP_mux0002<4>127_SW1 (N20)
+     LUT4:I2->O            1   0.704   0.455  ALUOP_mux0002<4>127 (ALUOP_mux0002<4>127)
+     LUT4:I2->O            1   0.704   0.424  ALUOP_mux0002<4>172_SW0 (N16)
+     LUT4:I3->O            1   0.704   0.000  ALUOP_mux0002<4>172 (ALUOP_mux0002<4>)
+     FD:D                      0.308          ALUOP_3
+    ----------------------------------------
+    Total                      6.812ns (4.342ns logic, 2.470ns route)
+                                       (63.7% logic, 36.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkFPGA'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            wren (FF)
+  Destination:       wren (PAD)
+  Source Clock:      clkFPGA rising
+
+  Data Path: wren to wren
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.591   0.420  wren (wren_OBUF)
+     OBUF:I->O                 3.272          wren_OBUF (wren)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.42 secs
+ 
+--> 
+
+Total memory usage is 253588 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

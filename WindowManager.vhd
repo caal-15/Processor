@@ -40,7 +40,7 @@ signal tmp1 : std_logic_vector(5 downto 0);
 signal tmp2 : std_logic_vector(5 downto 0);
 signal tmp3 : std_logic_vector(5 downto 0);
 begin
-   process(clk,cwp,rs1,rs2,rd,op3)begin
+   process(cwp,rs1,rs2,rd,op3)begin
 		if((op3="111100") or (op3="111101"))then -- save or restore operation
 			if(cwp = "00000")then
 				ncwp <= "00001";

@@ -1,0 +1,7 @@
+[Inputs]
+i
+=CRS2[31:0]=
+=SEUin[31:0]=
+[Outputs]
+=OP2[31:0]=
+[BiDir]

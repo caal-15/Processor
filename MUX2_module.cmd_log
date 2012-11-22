@@ -1,0 +1,3 @@
+vhdtdtfi -lib work MUX2_module.vhd -prj Core_iDeivid -o MUX2_module.spl -module MUX2_module -template F:/Windows/ISE/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e MUX2_module.spl F:/Documentos/Arquitectura/Processor/MUX2_module.sym 
+vhdtdtfi -prj Core_iDeivid -o F:/Documentos/Arquitectura/Processor/MUX2_module.vhi -module MUX2_module -template F:/Windows/ISE/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work MUX2_module.vhd 

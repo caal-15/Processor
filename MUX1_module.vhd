@@ -32,7 +32,7 @@ end MUX1_module;
 architecture Behavioral of MUX1_module is
 
 begin
-process(nRDin, cwp, RFDest) begin
+process(nRDin,  RFDest) begin
 	if( RFDest='1') then
 		nRD<= o15;
 	else

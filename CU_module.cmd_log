@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "F:/Documentos/Arquitectura/Processor/CU_module.xst" -ofn "F:/Documentos/Arquitectura/Processor/CU_module.syr" 
+vhdtdtfi -prj Core_iDeivid -o F:/Documentos/Arquitectura/Processor/CU_module.vhi -module CU_module -template F:/Windows/ISE/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work CU_module.vhd 
