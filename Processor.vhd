@@ -69,7 +69,6 @@ COMPONENT ADDER2_module
 		OP3 : IN std_logic_vector(5 downto 0);
 		icc : IN std_logic_vector(3 downto 0);
 		Cond : IN std_logic_vector(3 downto 0);
-		clkFPGA : IN std_logic;          
 		wren : OUT std_logic;
 		PCsource : OUT std_logic_vector(1 downto 0);
 		ALUOP : OUT std_logic_vector(7 downto 0);
@@ -85,7 +84,6 @@ COMPONENT DataMem_module
 		WrEnMem : IN std_logic;
 		RdEnMem : IN std_logic;
 		reset : IN std_logic;
-		clkFPGA : IN std_logic;
 		crd : IN std_logic_vector(31 downto 0);
 		ALUResult : IN std_logic_vector(31 downto 0);          
 		DataToMem : OUT std_logic_vector(31 downto 0)
@@ -94,7 +92,6 @@ COMPONENT DataMem_module
 	
 	COMPONENT InstMemory_module
 	PORT(
-		clkFPGA : IN std_logic;
 		reset : IN std_logic;
 		address : IN std_logic_vector(4 downto 0);          
 		dataOut : OUT std_logic_vector(31 downto 0)
@@ -173,7 +170,6 @@ COMPONENT PSR_module
 	
 	COMPONENT RegisterFile_module
 	PORT(
-		clkFPGA : IN std_logic;
 		reset : IN std_logic;
 		nRS1 : IN std_logic_vector(5 downto 0);
 		nRS2 : IN std_logic_vector(5 downto 0);
@@ -192,15 +188,7 @@ COMPONENT PSR_module
 		seuOut : OUT std_logic_vector(31 downto 0)
 		);
 	END COMPONENT;
-	
-	
-	COMPONENT SEU_module
-	PORT(
-		simm13 : IN std_logic_vector(12 downto 0);          
-		seuOut : OUT std_logic_vector(31 downto 0)
-		);
-	END COMPONENT;
-	
+		
 	COMPONENT WindowManager
 	PORT(
 		cwp : IN std_logic_vector(4 downto 0);
@@ -245,7 +233,22 @@ signal rfdest : std_logic;
 signal rfsource : std_logic_vector (1 downto 0); 
 signal pcsource : std_logic_vector (1 downto 0);
 signal rdenmem : std_logic;
-signal wrenmen : std_logic;
+signal wrenmem : std_logic;
+signal crd : std_logic_vector (31 downto 0); 
+signal datatoreg : std_logic_vector (31 downto 0); 
+signal datatomux : std_logic_vector (31 downto 0); 
+signal mux1torf : std_logic_vector (5 downto 0);
+signal nrs1 : std_logic_vector (5 downto 0);
+signal nrs2 : std_logic_vector (5 downto 0);
+signal cwp : std_logic_vector (4 downto 0);
+signal ncwp : std_logic_vector (4 downto 0);
+signal nzvc : std_logic_vector (3 downto 0);
+signal mux3tonpc : std_logic_vector (4 downto 0);
+
+
+
+
+
 begin
 	Inst_ADDER1_module: ADDER1_module PORT MAP(
 			OP1 => PCtoOthers,
@@ -257,8 +260,8 @@ begin
 		AddOut => disp22_PC
 	);
 	Inst_ADDER3_module: ADDER3_module PORT MAP(
-		OP1 => PCtoOthers,
-		OP2 => IMout(29 downto 0),
+		OP1 => IMout(29 downto 0),
+		OP2 => PCtoOthers,
 		Addout => disp30_PC
 	);
 	Inst_ALU_module: ALU_module PORT MAP(
@@ -277,23 +280,22 @@ begin
 		PCsource => pcsource,
 		ALUOP => cualuop,
 		RdEnMem => rdenmem,
-		WrEnMem => wrenmen,
+		WrEnMem => wrenmem,
 		RFsource => rfsource,
-		RFdest => rfdest,
+		RFdest => rfdest
 		
 	);
 	Inst_DataMem_module: DataMem_module PORT MAP(
 		WrEnMem => wrenmem,
 		RdEnMem => rdenmem,
-		reset => ,
-		
-		crd => ,
+		reset => reset,
+		crd => crd,
 		ALUResult => ALUout,
-		DataToMem => 
+		DataToMem => datatomux 
 	);
 	Inst_InstMemory_module: InstMemory_module PORT MAP(
 		
-		reset => ,
+		reset => reset,
 		address => PCtoOthers,
 		dataOut => IMout 
 	);
@@ -301,7 +303,7 @@ begin
 		nRDin => nrdWM,
 		o15 => o7WM,
 		RFDest => rfdest,
-		nRD => 
+		nRD => mux1torf 
 	);
 	Inst_MUX2_module: MUX2_module PORT MAP(
 		CRS2 => crs2,
@@ -315,76 +317,76 @@ begin
 		PC_seu => disp22_PC,
 		PC_4 => pc_4,
 		PCsource => pcsource,
-		MUXout => 
+		MUXout => mux3tonpc
 	);
 	Inst_MUX4_module: MUX4_module PORT MAP(
 		PC => PCtoOthers,
 		RFsource => rfsource,
-		DataToMem => ,
+		DataToMem => datatomux ,
 		ALUResult => ALUout,
-		DataToReg => 
+		DataToReg => datatoreg 
 	);
 	Inst_PC_module: PC_module PORT MAP(
 		nextInstruction => nPCtoPC,
-		reset => ,
-		clkFPGA => ,
+		reset => reset,
+		clkFPGA => clk,
 		outInstruction => PCtoOthers 
 	);
 	Inst_nPC_module: PC_module PORT MAP(
-		nextInstruction => ,
-		reset => ,
-		clkFPGA => ,
+		nextInstruction => mux3tonpc,
+		reset => reset,
+		clkFPGA => clk,
 		outInstruction => nPCtoPC
 	);
 
 
 	Inst_PSRModifier: PSRModifier PORT MAP(
-		crs1 => ,
-		crs2 => ,
+		crs1 => crs1 ,
+		crs2 => crs2,
 		ALUOp => cualuop,
 		ALUOut => ALUout,
-		NZVC => 
+		NZVC => nzvc
 	);
 	Inst_PSR_module: PSR_module PORT MAP(
-		clkFPGA => ,
-		reset => ,
-		NZVC => ,
-		nCWP => ,
-		CWP => ,
+		clkFPGA => clk,
+		reset => reset ,
+		NZVC => nzvc,
+		nCWP => ncwp,
+		CWP => cwp,
 		Carry => carry,
 		icc => icc 
 	);
 	Inst_RegisterFile_module: RegisterFile_module PORT MAP(
 		
-		reset => ,
-		nRS1 => ,
-		nRS2 => ,
-		nRSD => ,
-		DATATOREG => ,
+		reset => reset,
+		nRS1 => nrs1,
+		nRS2 => nrs2,
+		nRSD => mux1torf,
+		DATATOREG => datatoreg ,
 		wren => wren,
 		CRS1 => crs1,
 		CRS2 => crs2,
-		CRSD => 
+		CRSD => crd
 	);
 	Inst_SEU_module: SEU_module PORT MAP(
 		simm13 => IMout (12 downto 0),
-		seuOut => 
+		seuOut =>  seusimm13
 	);
 	Inst_WindowManager: WindowManager PORT MAP(
-		cwp => ,
+		cwp => cwp,
 		rs1 => IMout (18 downto 14),
 		rs2 => IMout (4 downto 0) ,
 		rd => IMout (29 downto 25),
 		op3 => IMout (24 downto 19),
-		ncwp => ,
-		nrs1 => ,
-		nrs2 => ,
+		ncwp => ncwp,
+		nrs1 => nrs1,
+		nrs2 => nrs2,
 		nrd => nrdWM,
 		no7 => o7WM
 	);
 	
 	Inst_SEU22_module: SEU22_module PORT MAP(
-		disp22 => ,
+		disp22 => IMout(21 downto 0),
 		seuOut => disp22e
 	);
 

@@ -21,7 +21,7 @@ architecture Behavioral of CU_module is
 signal calcicc : std_logic :='0';
 begin
 
-process(icc, Cond,OP,OP3,icc,Cond, a)
+process(icc, Cond,OP,OP3,icc,Cond)
 
 begin
 

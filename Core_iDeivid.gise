@@ -55,6 +55,7 @@
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="DataMem_module.stx"/>
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="DataMem_module.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="DataMem_module.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="InstMemory_module.ngr"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="InstMemory_module.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="InstMemory_module.stx"/>
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="InstMemory_module.vhi"/>
@@ -77,6 +78,7 @@
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="MUX4_module.stx"/>
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="MUX4_module.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="MUX4_module.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="PC_module.ngr"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PC_module.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PC_module.stx"/>
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="PC_module.vhi"/>
@@ -89,6 +91,16 @@
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PSR_module.stx"/>
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="PSR_module.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="PSR_module.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Processor.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Processor.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Processor.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Processor.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Processor.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Processor.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Processor.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Processor.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Processor_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Processor_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RegisterFile_module.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="RegisterFile_module.stx"/>
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="RegisterFile_module.vhi"/>
@@ -229,6 +241,50 @@
     <transform xil_pn:end_ts="1353327082" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1353327082">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1353785470" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2268456865476833019" xil_pn:start_ts="1353785470">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1353785470" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="6333057462176832907" xil_pn:start_ts="1353785470">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1353785470" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1353785470">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1353785470" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="3159804636837795331" xil_pn:start_ts="1353785470">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1353785470" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1353785470">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1353785470" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-8425949295125998251" xil_pn:start_ts="1353785470">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1353786917" xil_pn:in_ck="-6427214362924785102" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="1867502919124810684" xil_pn:start_ts="1353786667">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="CU_module.ngr"/>
+      <outfile xil_pn:name="InstMemory_module.ngr"/>
+      <outfile xil_pn:name="PC_module.ngr"/>
+      <outfile xil_pn:name="Processor.lso"/>
+      <outfile xil_pn:name="Processor.ngc"/>
+      <outfile xil_pn:name="Processor.ngr"/>
+      <outfile xil_pn:name="Processor.prj"/>
+      <outfile xil_pn:name="Processor.stx"/>
+      <outfile xil_pn:name="Processor.syr"/>
+      <outfile xil_pn:name="Processor.xst"/>
+      <outfile xil_pn:name="Processor_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
     </transform>
   </transforms>
 

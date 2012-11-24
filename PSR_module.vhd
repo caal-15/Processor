@@ -16,7 +16,6 @@ architecture Behavioral of PSR_module is
 begin
 
 process(NZVC, nCWP, clkFPGA, reset ) begin
-
 if(rising_edge(clkFPGA))then
 	if(reset = '1')then 
 		Carry <= '0';
@@ -24,12 +23,11 @@ if(rising_edge(clkFPGA))then
 		icc <= (others => '0');
 	else
 	   Carry <= NZVC(0);
-		icc <= NZVC;
-		CWP <= nCWP;
+	   icc <= NZVC;
+	   CWP <= nCWP;
 	end if;
-end if;	
-	
-
+end if;
 end process;
+
 end Behavioral;
 
