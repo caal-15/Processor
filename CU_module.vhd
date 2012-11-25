@@ -27,14 +27,15 @@ begin
 	
 	PCsource <= "11";--defaults
 	RFsource <= "01";
-	wren <= '1';
+	wren <= '0';
 	RdEnMem <= '0';
 	WrEnMem <= '0';
 	RFdest <= '0';
 	
 	if(OP = "10")then
+		wren<='1';
 		case OP3 is
-		
+		 
 			when "000000" => ALUOP <= x"01"; --INICION ADDERs
 			when "010000" => ALUOP <= x"02"; --ADDcc
 			when "001000" => ALUOP <= x"03";	--ADDx
@@ -82,12 +83,12 @@ begin
 				RdEnMem <= '1';--activa lectura en memoria
 				WrEnMem <= '0';
 				RFsource <= "01";--selecciona dato de memoria como datatoreg
-			
+			   wren<='1';
 			when "000100" =>--store word
 				ALUOP <= x"20";
 				WrEnMem <= '1';--activa escritura en memoria
 				RdEnMem <= '0';
-				wren <= '0';--desactiva escritura en register
+				
 								
 				
 			when others => ALUOP <= x"00";
