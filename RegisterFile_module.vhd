@@ -27,7 +27,7 @@ signal registers : ram_type := (others => x"00000000");
 
 begin
 
-process( reset, wren)
+process( reset, wren, nrs1, nrs2, nrsd, datatoreg, registers)
 
 begin
 

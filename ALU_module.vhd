@@ -18,7 +18,7 @@ signal dataOut : std_logic_vector (31 downto 0);
 
 begin
 
-	process(ALUOP,OP1,OP2,Carry) begin
+	process(ALUOP,OP1,OP2,Carry, dataOut) begin
 		case ALUOP is
 			when x"01" => --ADD
 				dataOut <= OP1 + OP2;

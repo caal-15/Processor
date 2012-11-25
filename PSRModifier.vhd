@@ -34,7 +34,7 @@ architecture arch_PSRM of PSRModifier is
 begin
    process(crs1,crs2,ALUOp,ALUOut) begin
   
-		if(ALUOut = X"0000000")then -- Supports all icc modifications for logical instructions (not overflow or carry)
+		if(ALUOut = x"00000000")then -- Supports all icc modifications for logical instructions (not overflow or carry)
 			NZVC(3) <= '1';
 		else 
 			NZVC(3) <= '0';

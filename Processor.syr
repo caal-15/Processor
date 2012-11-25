@@ -1,21 +1,18 @@
-Release 14.2 - xst P.28xd (lin64)
+Release 14.2 - xst P.28xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
---> 
-Parameter TMPDIR set to xst/projnav.tmp
+--> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
  
---> 
-Parameter xsthdpdir set to xst
+--> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
  
---> 
-Reading design: Processor.prj
+--> Reading design: Processor.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -107,50 +104,52 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "/home/pin3da/Repos/Processor/ADDER1_module.vhd" in Library work.
-Architecture behavioral of Entity adder1_module is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Processor/ADDER2_module.vhd" in Library work.
-Architecture behavioral of Entity adder2_module is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Processor/ADDER3_module.vhd" in Library work.
-Architecture behavioral of Entity adder3_module is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Processor/ALU_module.vhd" in Library work.
-Architecture behavioral of Entity alu_module is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Processor/CU_module.vhd" in Library work.
-Architecture behavioral of Entity cu_module is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Processor/DataMem_module.vhd" in Library work.
-Architecture behavioral of Entity datamem_module is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Processor/InstMemory_module.vhd" in Library work.
-Architecture behavioral of Entity instmemory_module is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Processor/MUX1_module.vhd" in Library work.
-Architecture behavioral of Entity mux1_module is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Processor/MUX2_module.vhd" in Library work.
-Architecture behavioral of Entity mux2_module is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Processor/MUX3_module.vhd" in Library work.
-Architecture behavioral of Entity mux3_module is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Processor/MUX4_module.vhd" in Library work.
-Architecture behavioral of Entity mux4_module is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Processor/PC_module.vhd" in Library work.
-Architecture behavioral of Entity pc_module is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Processor/PSRModifier.vhd" in Library work.
-Architecture arch_psrm of Entity psrmodifier is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Processor/PSR_module.vhd" in Library work.
-Architecture behavioral of Entity psr_module is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Processor/RegisterFile_module.vhd" in Library work.
-Architecture behavioral of Entity registerfile_module is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Processor/SEU_module.vhd" in Library work.
-Architecture behavioral of Entity seu_module is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Processor/WindowManager.vhd" in Library work.
-Architecture arch_wm of Entity windowmanager is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Processor/SEU22_module.vhd" in Library work.
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/SEU22_module.vhd" in Library work.
 Architecture behavioral of Entity seu22_module is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Processor/Processor.vhd" in Library work.
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/ADDER1_module.vhd" in Library work.
+Architecture behavioral of Entity adder1_module is up to date.
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/ADDER2_module.vhd" in Library work.
+Architecture behavioral of Entity adder2_module is up to date.
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/ADDER3_module.vhd" in Library work.
+Architecture behavioral of Entity adder3_module is up to date.
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/ALU_module.vhd" in Library work.
+Architecture behavioral of Entity alu_module is up to date.
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/CU_module.vhd" in Library work.
+Architecture behavioral of Entity cu_module is up to date.
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/DataMem_module.vhd" in Library work.
+Architecture behavioral of Entity datamem_module is up to date.
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/InstMemory_module.vhd" in Library work.
+Architecture behavioral of Entity instmemory_module is up to date.
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/MUX1_module.vhd" in Library work.
+Architecture behavioral of Entity mux1_module is up to date.
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/MUX2_module.vhd" in Library work.
+Architecture behavioral of Entity mux2_module is up to date.
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/MUX3_module.vhd" in Library work.
+Architecture behavioral of Entity mux3_module is up to date.
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/MUX4_module.vhd" in Library work.
+Architecture behavioral of Entity mux4_module is up to date.
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/PC_module.vhd" in Library work.
+Architecture behavioral of Entity pc_module is up to date.
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/PSRModifier.vhd" in Library work.
+Architecture arch_psrm of Entity psrmodifier is up to date.
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/PSR_module.vhd" in Library work.
+Architecture behavioral of Entity psr_module is up to date.
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/RegisterFile_module.vhd" in Library work.
+Architecture behavioral of Entity registerfile_module is up to date.
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/SEU_module.vhd" in Library work.
+Architecture behavioral of Entity seu_module is up to date.
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/WindowManager.vhd" in Library work.
+Architecture arch_wm of Entity windowmanager is up to date.
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/Processor.vhd" in Library work.
 Entity <processor> compiled.
-Entity <Processor> (Architecture <Behavioral>) compiled.
+Entity <processor> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <Processor> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <Processor> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SEU22_module> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <ADDER1_module> in library <work> (architecture <behavioral>).
 
@@ -186,15 +185,15 @@ Analyzing hierarchy for entity <SEU_module> in library <work> (architecture <beh
 
 Analyzing hierarchy for entity <WindowManager> in library <work> (architecture <arch_wm>).
 
-Analyzing hierarchy for entity <SEU22_module> in library <work> (architecture <behavioral>).
-
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <Processor> in library <work> (Architecture <Behavioral>).
-WARNING:Xst:752 - "/home/pin3da/Repos/Processor/Processor.vhd" line 274: Unconnected input port 'clkFPGA' of component 'CU_module' is tied to default value.
+Analyzing Entity <Processor> in library <work> (Architecture <behavioral>).
 Entity <Processor> analyzed. Unit <Processor> generated.
+
+Analyzing Entity <SEU22_module> in library <work> (Architecture <behavioral>).
+Entity <SEU22_module> analyzed. Unit <SEU22_module> generated.
 
 Analyzing Entity <ADDER1_module> in library <work> (Architecture <behavioral>).
 Entity <ADDER1_module> analyzed. Unit <ADDER1_module> generated.
@@ -206,41 +205,37 @@ Analyzing Entity <ADDER3_module> in library <work> (Architecture <behavioral>).
 Entity <ADDER3_module> analyzed. Unit <ADDER3_module> generated.
 
 Analyzing Entity <ALU_module> in library <work> (Architecture <behavioral>).
-WARNING:Xst:790 - "/home/pin3da/Repos/Processor/ALU_module.vhd" line 70: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "/home/pin3da/Repos/Processor/ALU_module.vhd" line 70: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "/home/pin3da/Repos/Processor/ALU_module.vhd" line 73: Index value(s) does not match array range, simulation mismatch.
-WARNING:Xst:790 - "/home/pin3da/Repos/Processor/ALU_module.vhd" line 76: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "F:/Documentos/Arquitectura/Processor/ALU_module.vhd" line 70: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "F:/Documentos/Arquitectura/Processor/ALU_module.vhd" line 70: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "F:/Documentos/Arquitectura/Processor/ALU_module.vhd" line 73: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "F:/Documentos/Arquitectura/Processor/ALU_module.vhd" line 76: Index value(s) does not match array range, simulation mismatch.
 Entity <ALU_module> analyzed. Unit <ALU_module> generated.
 
 Analyzing Entity <CU_module> in library <work> (Architecture <behavioral>).
 Entity <CU_module> analyzed. Unit <CU_module> generated.
 
 Analyzing Entity <DataMem_module> in library <work> (Architecture <behavioral>).
-WARNING:Xst:790 - "/home/pin3da/Repos/Processor/DataMem_module.vhd" line 45: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "F:/Documentos/Arquitectura/Processor/DataMem_module.vhd" line 45: Index value(s) does not match array range, simulation mismatch.
 INFO:Xst:1607 - Contents of array <memory> may be accessed with an index that does not cover the full array size.
-WARNING:Xst:790 - "/home/pin3da/Repos/Processor/DataMem_module.vhd" line 47: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "F:/Documentos/Arquitectura/Processor/DataMem_module.vhd" line 47: Index value(s) does not match array range, simulation mismatch.
 INFO:Xst:1607 - Contents of array <memory> may be accessed with an index that does not cover the full array size.
-WARNING:Xst:819 - "/home/pin3da/Repos/Processor/DataMem_module.vhd" line 40: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "F:/Documentos/Arquitectura/Processor/DataMem_module.vhd" line 40: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <memory>
 Entity <DataMem_module> analyzed. Unit <DataMem_module> generated.
 
 Analyzing Entity <InstMemory_module> in library <work> (Architecture <behavioral>).
-WARNING:Xst:790 - "/home/pin3da/Repos/Processor/InstMemory_module.vhd" line 53: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "F:/Documentos/Arquitectura/Processor/InstMemory_module.vhd" line 53: Index value(s) does not match array range, simulation mismatch.
 INFO:Xst:1433 - Contents of array <instruction> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
-WARNING:Xst:819 - "/home/pin3da/Repos/Processor/InstMemory_module.vhd" line 45: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <instruction>
 Entity <InstMemory_module> analyzed. Unit <InstMemory_module> generated.
 
 Analyzing Entity <MUX1_module> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "/home/pin3da/Repos/Processor/MUX1_module.vhd" line 35: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <o15>
 Entity <MUX1_module> analyzed. Unit <MUX1_module> generated.
 
 Analyzing Entity <MUX2_module> in library <work> (Architecture <behavioral>).
 Entity <MUX2_module> analyzed. Unit <MUX2_module> generated.
 
 Analyzing Entity <MUX3_module> in library <work> (Architecture <behavioral>).
-INFO:Xst:1561 - "/home/pin3da/Repos/Processor/MUX3_module.vhd" line 26: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "F:/Documentos/Arquitectura/Processor/MUX3_module.vhd" line 26: Mux is complete : default of case is discarded
 Entity <MUX3_module> analyzed. Unit <MUX3_module> generated.
 
 Analyzing Entity <MUX4_module> in library <work> (Architecture <behavioral>).
@@ -250,23 +245,20 @@ Analyzing Entity <PC_module> in library <work> (Architecture <behavioral>).
 Entity <PC_module> analyzed. Unit <PC_module> generated.
 
 Analyzing Entity <PSRModifier> in library <work> (Architecture <arch_psrm>).
-WARNING:Xst:795 - "/home/pin3da/Repos/Processor/PSRModifier.vhd" line 37: Size of operands are different : result is <false>.
 Entity <PSRModifier> analyzed. Unit <PSRModifier> generated.
 
 Analyzing Entity <PSR_module> in library <work> (Architecture <behavioral>).
 Entity <PSR_module> analyzed. Unit <PSR_module> generated.
 
 Analyzing Entity <RegisterFile_module> in library <work> (Architecture <behavioral>).
-WARNING:Xst:790 - "/home/pin3da/Repos/Processor/RegisterFile_module.vhd" line 40: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "F:/Documentos/Arquitectura/Processor/RegisterFile_module.vhd" line 40: Index value(s) does not match array range, simulation mismatch.
 INFO:Xst:1433 - Contents of array <registers> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
-WARNING:Xst:790 - "/home/pin3da/Repos/Processor/RegisterFile_module.vhd" line 41: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "F:/Documentos/Arquitectura/Processor/RegisterFile_module.vhd" line 41: Index value(s) does not match array range, simulation mismatch.
 INFO:Xst:1433 - Contents of array <registers> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
-WARNING:Xst:790 - "/home/pin3da/Repos/Processor/RegisterFile_module.vhd" line 42: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "F:/Documentos/Arquitectura/Processor/RegisterFile_module.vhd" line 42: Index value(s) does not match array range, simulation mismatch.
 INFO:Xst:1433 - Contents of array <registers> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
-WARNING:Xst:790 - "/home/pin3da/Repos/Processor/RegisterFile_module.vhd" line 44: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "F:/Documentos/Arquitectura/Processor/RegisterFile_module.vhd" line 44: Index value(s) does not match array range, simulation mismatch.
 INFO:Xst:1433 - Contents of array <registers> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
-WARNING:Xst:819 - "/home/pin3da/Repos/Processor/RegisterFile_module.vhd" line 30: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <registers>, <nRSD>, <DATATOREG>
 Entity <RegisterFile_module> analyzed. Unit <RegisterFile_module> generated.
 
 Analyzing Entity <SEU_module> in library <work> (Architecture <behavioral>).
@@ -275,9 +267,6 @@ Entity <SEU_module> analyzed. Unit <SEU_module> generated.
 Analyzing Entity <WindowManager> in library <work> (Architecture <arch_wm>).
 Entity <WindowManager> analyzed. Unit <WindowManager> generated.
 
-Analyzing Entity <SEU22_module> in library <work> (Architecture <behavioral>).
-Entity <SEU22_module> analyzed. Unit <SEU22_module> generated.
-
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -285,8 +274,13 @@ Entity <SEU22_module> analyzed. Unit <SEU22_module> generated.
 
 Performing bidirectional port resolution...
 
+Synthesizing Unit <SEU22_module>.
+    Related source file is "F:/Documentos/Arquitectura/Processor/SEU22_module.vhd".
+Unit <SEU22_module> synthesized.
+
+
 Synthesizing Unit <ADDER1_module>.
-    Related source file is "/home/pin3da/Repos/Processor/ADDER1_module.vhd".
+    Related source file is "F:/Documentos/Arquitectura/Processor/ADDER1_module.vhd".
     Found 5-bit adder for signal <AddOut>.
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -294,7 +288,7 @@ Unit <ADDER1_module> synthesized.
 
 
 Synthesizing Unit <ADDER2_module>.
-    Related source file is "/home/pin3da/Repos/Processor/ADDER2_module.vhd".
+    Related source file is "F:/Documentos/Arquitectura/Processor/ADDER2_module.vhd".
     Found 32-bit adder for signal <AddOut>.
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -302,7 +296,7 @@ Unit <ADDER2_module> synthesized.
 
 
 Synthesizing Unit <ADDER3_module>.
-    Related source file is "/home/pin3da/Repos/Processor/ADDER3_module.vhd".
+    Related source file is "F:/Documentos/Arquitectura/Processor/ADDER3_module.vhd".
     Found 32-bit adder for signal <Addout>.
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -310,7 +304,7 @@ Unit <ADDER3_module> synthesized.
 
 
 Synthesizing Unit <ALU_module>.
-    Related source file is "/home/pin3da/Repos/Processor/ALU_module.vhd".
+    Related source file is "F:/Documentos/Arquitectura/Processor/ALU_module.vhd".
 WARNING:Xst:737 - Found 1-bit latch for signal <dataOut_10>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 WARNING:Xst:737 - Found 1-bit latch for signal <dataOut_9>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -418,8 +412,7 @@ Unit <ALU_module> synthesized.
 
 
 Synthesizing Unit <CU_module>.
-    Related source file is "/home/pin3da/Repos/Processor/CU_module.vhd".
-WARNING:Xst:647 - Input <clkFPGA> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Related source file is "F:/Documentos/Arquitectura/Processor/CU_module.vhd".
     Found 4x1-bit ROM for signal <RFdest>.
 WARNING:Xst:737 - Found 1-bit latch for signal <calcicc>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
@@ -428,8 +421,8 @@ INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and 
     Found 8-bit 4-to-1 multiplexer for signal <ALUOP>.
     Found 2-bit 4-to-1 multiplexer for signal <RFsource>.
     Found 1-bit 4-to-1 multiplexer for signal <RdEnMem>.
-    Found 1-bit xor2 for signal <calcicc$xor0000> created at line 133.
-    Found 2-bit 16-to-1 multiplexer for signal <PCsource$mux0006> created at line 110.
+    Found 1-bit xor2 for signal <calcicc$xor0000> created at line 132.
+    Found 2-bit 16-to-1 multiplexer for signal <PCsource$mux0006> created at line 109.
     Summary:
 	inferred   1 ROM(s).
 	inferred  16 Multiplexer(s).
@@ -437,7 +430,7 @@ Unit <CU_module> synthesized.
 
 
 Synthesizing Unit <DataMem_module>.
-    Related source file is "/home/pin3da/Repos/Processor/DataMem_module.vhd".
+    Related source file is "F:/Documentos/Arquitectura/Processor/DataMem_module.vhd".
 WARNING:Xst:647 - Input <ALUResult<31:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:737 - Found 32-bit latch for signal <DataToMem>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 32-bit latch for signal <memory_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -479,7 +472,7 @@ Unit <DataMem_module> synthesized.
 
 
 Synthesizing Unit <InstMemory_module>.
-    Related source file is "/home/pin3da/Repos/Processor/InstMemory_module.vhd".
+    Related source file is "F:/Documentos/Arquitectura/Processor/InstMemory_module.vhd".
 WARNING:Xst:647 - Input <address<4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1781 - Signal <instruction> is used but never assigned. Tied to default value.
     Found 15x32-bit ROM for signal <$varindex0000> created at line 53.
@@ -489,17 +482,17 @@ Unit <InstMemory_module> synthesized.
 
 
 Synthesizing Unit <MUX1_module>.
-    Related source file is "/home/pin3da/Repos/Processor/MUX1_module.vhd".
+    Related source file is "F:/Documentos/Arquitectura/Processor/MUX1_module.vhd".
 Unit <MUX1_module> synthesized.
 
 
 Synthesizing Unit <MUX2_module>.
-    Related source file is "/home/pin3da/Repos/Processor/MUX2_module.vhd".
+    Related source file is "F:/Documentos/Arquitectura/Processor/MUX2_module.vhd".
 Unit <MUX2_module> synthesized.
 
 
 Synthesizing Unit <MUX3_module>.
-    Related source file is "/home/pin3da/Repos/Processor/MUX3_module.vhd".
+    Related source file is "F:/Documentos/Arquitectura/Processor/MUX3_module.vhd".
 WARNING:Xst:647 - Input <ALUaddress<31:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <PC_dis30<31:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <PC_seu<31:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -510,12 +503,12 @@ Unit <MUX3_module> synthesized.
 
 
 Synthesizing Unit <MUX4_module>.
-    Related source file is "/home/pin3da/Repos/Processor/MUX4_module.vhd".
+    Related source file is "F:/Documentos/Arquitectura/Processor/MUX4_module.vhd".
 Unit <MUX4_module> synthesized.
 
 
 Synthesizing Unit <PC_module>.
-    Related source file is "/home/pin3da/Repos/Processor/PC_module.vhd".
+    Related source file is "F:/Documentos/Arquitectura/Processor/PC_module.vhd".
     Found 5-bit register for signal <outInstruction>.
     Summary:
 	inferred   5 D-type flip-flop(s).
@@ -523,10 +516,9 @@ Unit <PC_module> synthesized.
 
 
 Synthesizing Unit <PSRModifier>.
-    Related source file is "/home/pin3da/Repos/Processor/PSRModifier.vhd".
+    Related source file is "F:/Documentos/Arquitectura/Processor/PSRModifier.vhd".
 WARNING:Xst:647 - Input <crs1<30:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <crs2<30:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <ALUOut<30:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1305 - Output <NZVC<2>> is never assigned. Tied to value 0.
     Register <NZVC<1>> equivalent to <NZVC<0>> has been removed
 WARNING:Xst:737 - Found 1-bit latch for signal <NZVC_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -537,7 +529,7 @@ Unit <PSRModifier> synthesized.
 
 
 Synthesizing Unit <PSR_module>.
-    Related source file is "/home/pin3da/Repos/Processor/PSR_module.vhd".
+    Related source file is "F:/Documentos/Arquitectura/Processor/PSR_module.vhd".
     Found 1-bit register for signal <Carry>.
     Found 5-bit register for signal <CWP>.
     Found 4-bit register for signal <icc>.
@@ -547,7 +539,7 @@ Unit <PSR_module> synthesized.
 
 
 Synthesizing Unit <RegisterFile_module>.
-    Related source file is "/home/pin3da/Repos/Processor/RegisterFile_module.vhd".
+    Related source file is "F:/Documentos/Arquitectura/Processor/RegisterFile_module.vhd".
 WARNING:Xst:647 - Input <nRS1<5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <nRS2<5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:737 - Found 32-bit latch for signal <registers_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -591,12 +583,12 @@ Unit <RegisterFile_module> synthesized.
 
 
 Synthesizing Unit <SEU_module>.
-    Related source file is "/home/pin3da/Repos/Processor/SEU_module.vhd".
+    Related source file is "F:/Documentos/Arquitectura/Processor/SEU_module.vhd".
 Unit <SEU_module> synthesized.
 
 
 Synthesizing Unit <WindowManager>.
-    Related source file is "/home/pin3da/Repos/Processor/WindowManager.vhd".
+    Related source file is "F:/Documentos/Arquitectura/Processor/WindowManager.vhd".
 WARNING:Xst:653 - Signal <tmp3<5>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <tmp2<5>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:653 - Signal <tmp1<5>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
@@ -647,13 +639,8 @@ WARNING:Xst:737 - Found 1-bit latch for signal <tmp1_4>. Latches may be generate
 Unit <WindowManager> synthesized.
 
 
-Synthesizing Unit <SEU22_module>.
-    Related source file is "/home/pin3da/Repos/Processor/SEU22_module.vhd".
-Unit <SEU22_module> synthesized.
-
-
 Synthesizing Unit <Processor>.
-    Related source file is "/home/pin3da/Repos/Processor/Processor.vhd".
+    Related source file is "F:/Documentos/Arquitectura/Processor/Processor.vhd".
 WARNING:Xst:1306 - Output <DataOut> is never assigned.
 Unit <Processor> synthesized.
 
@@ -697,6 +684,8 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1290 - Hierarchical block <Inst_SEU22_module> is unconnected in block <Processor>.
+   It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Inst_ADDER1_module> is unconnected in block <Processor>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Inst_ADDER2_module> is unconnected in block <Processor>.
@@ -732,8 +721,6 @@ WARNING:Xst:1290 - Hierarchical block <Inst_RegisterFile_module> is unconnected 
 WARNING:Xst:1290 - Hierarchical block <Inst_SEU_module> is unconnected in block <Processor>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <Inst_WindowManager> is unconnected in block <Processor>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <Inst_SEU22_module> is unconnected in block <Processor>.
    It will be removed from the design.
 
 =========================================================================
@@ -785,6 +772,8 @@ Optimizing unit <ALU_module> ...
 
 Optimizing unit <CU_module> ...
 
+Optimizing unit <PSRModifier> ...
+
 Optimizing unit <PSR_module> ...
 
 Optimizing unit <DataMem_module> ...
@@ -802,7 +791,6 @@ WARNING:Xst:2677 - Node <Inst_PC_module/outInstruction_3> of sequential type is 
 WARNING:Xst:2677 - Node <Inst_PC_module/outInstruction_2> of sequential type is unconnected in block <Processor>.
 WARNING:Xst:2677 - Node <Inst_PC_module/outInstruction_1> of sequential type is unconnected in block <Processor>.
 WARNING:Xst:2677 - Node <Inst_PC_module/outInstruction_0> of sequential type is unconnected in block <Processor>.
-WARNING:Xst:2677 - Node <Inst_PSRModifier/NZVC_0> of sequential type is unconnected in block <Processor>.
 WARNING:Xst:2677 - Node <Inst_ALU_module/dataOut_10> of sequential type is unconnected in block <Processor>.
 WARNING:Xst:2677 - Node <Inst_ALU_module/dataOut_9> of sequential type is unconnected in block <Processor>.
 WARNING:Xst:2677 - Node <Inst_ALU_module/dataOut_11> of sequential type is unconnected in block <Processor>.
@@ -836,6 +824,7 @@ WARNING:Xst:2677 - Node <Inst_ALU_module/dataOut_6> of sequential type is unconn
 WARNING:Xst:2677 - Node <Inst_ALU_module/dataOut_7> of sequential type is unconnected in block <Processor>.
 WARNING:Xst:2677 - Node <Inst_ALU_module/dataOut_8> of sequential type is unconnected in block <Processor>.
 WARNING:Xst:2677 - Node <Inst_CU_module/calcicc> of sequential type is unconnected in block <Processor>.
+WARNING:Xst:2677 - Node <Inst_PSRModifier/NZVC_0> of sequential type is unconnected in block <Processor>.
 WARNING:Xst:2677 - Node <Inst_PSR_module/CWP_4> of sequential type is unconnected in block <Processor>.
 WARNING:Xst:2677 - Node <Inst_PSR_module/CWP_3> of sequential type is unconnected in block <Processor>.
 WARNING:Xst:2677 - Node <Inst_PSR_module/CWP_2> of sequential type is unconnected in block <Processor>.
@@ -3049,15 +3038,14 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 
 
-Total REAL time to Xst completion: 241.00 secs
-Total CPU time to Xst completion: 234.17 secs
+Total REAL time to Xst completion: 100.00 secs
+Total CPU time to Xst completion: 99.66 secs
  
 --> 
 
-
-Total memory usage is 819096 kilobytes
+Total memory usage is 578324 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 2358 (   0 filtered)
+Number of warnings : 2351 (   0 filtered)
 Number of infos    :   45 (   0 filtered)
 

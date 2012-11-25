@@ -13,8 +13,7 @@ entity CU_module is
            RdEnMem : out  STD_LOGIC;
            WrEnMem : out  STD_LOGIC;
            RFsource : out  STD_LOGIC_VECTOR (1 downto 0);
-           RFdest : out  STD_LOGIC;
-           clkFPGA : in  STD_LOGIC);
+           RFdest : out  STD_LOGIC);
 end CU_module;
 
 architecture Behavioral of CU_module is

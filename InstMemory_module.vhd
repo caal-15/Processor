@@ -42,7 +42,7 @@ signal instruction : rom_type := InitRomFromFile("program2.data");
 
 begin 
 
-process(reset, address)
+process(reset, address, instruction)
 
 begin
 

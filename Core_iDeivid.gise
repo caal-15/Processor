@@ -99,6 +99,8 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Processor.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Processor.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Processor.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Processor_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Processor_summary.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Processor_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Processor_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RegisterFile_module.prj"/>
@@ -266,7 +268,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1353786917" xil_pn:in_ck="-6427214362924785102" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="1867502919124810684" xil_pn:start_ts="1353786667">
+    <transform xil_pn:end_ts="1353862498" xil_pn:in_ck="-6427214362924785102" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="1867502919124810684" xil_pn:start_ts="1353862394">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -281,6 +283,7 @@
       <outfile xil_pn:name="Processor.stx"/>
       <outfile xil_pn:name="Processor.syr"/>
       <outfile xil_pn:name="Processor.xst"/>
+      <outfile xil_pn:name="Processor_vhdl.prj"/>
       <outfile xil_pn:name="Processor_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
