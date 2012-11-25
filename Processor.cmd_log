@@ -12,3 +12,4 @@ xst -intstyle ise -ifn "F:/Documentos/Arquitectura/Processor/Processor.xst" -ofn
 xst -intstyle ise -ifn "F:/Documentos/Arquitectura/Processor/Processor.xst" -ofn "F:/Documentos/Arquitectura/Processor/Processor.syr" 
 xst -intstyle ise -ifn "F:/Documentos/Arquitectura/Processor/Processor.xst" -ofn "F:/Documentos/Arquitectura/Processor/Processor.syr" 
 xst -intstyle ise -ifn "F:/Documentos/Arquitectura/Processor/Processor.xst" -ofn "F:/Documentos/Arquitectura/Processor/Processor.syr" 
+xst -intstyle ise -ifn "F:/Documentos/Arquitectura/Processor/Processor.xst" -ofn "F:/Documentos/Arquitectura/Processor/Processor.syr" 

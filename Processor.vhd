@@ -389,6 +389,8 @@ begin
 		no7 => o7WM
 	);
 	
+DataOut<=datatoreg_p;	
+	
 	
 
 	
