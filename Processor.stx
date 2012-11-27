@@ -1,0 +1,75 @@
+Release 14.2 - xst P.28xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/pin3da/Repos/Processor/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/pin3da/Repos/Processor/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/pin3da/Repos/Processor/SEU22_module.vhd" in Library work.
+Architecture behavioral of Entity seu22_module is up to date.
+Compiling vhdl file "/home/pin3da/Repos/Processor/ADDER1_module.vhd" in Library work.
+Architecture behavioral of Entity adder1_module is up to date.
+Compiling vhdl file "/home/pin3da/Repos/Processor/ADDER2_module.vhd" in Library work.
+Architecture behavioral of Entity adder2_module is up to date.
+Compiling vhdl file "/home/pin3da/Repos/Processor/ADDER3_module.vhd" in Library work.
+Architecture behavioral of Entity adder3_module is up to date.
+Compiling vhdl file "/home/pin3da/Repos/Processor/ALU_module.vhd" in Library work.
+Architecture behavioral of Entity alu_module is up to date.
+Compiling vhdl file "/home/pin3da/Repos/Processor/CU_module.vhd" in Library work.
+Architecture behavioral of Entity cu_module is up to date.
+Compiling vhdl file "/home/pin3da/Repos/Processor/DataMem_module.vhd" in Library work.
+Architecture behavioral of Entity datamem_module is up to date.
+Compiling vhdl file "/home/pin3da/Repos/Processor/InstMemory_module.vhd" in Library work.
+Architecture behavioral of Entity instmemory_module is up to date.
+Compiling vhdl file "/home/pin3da/Repos/Processor/MUX1_module.vhd" in Library work.
+Architecture behavioral of Entity mux1_module is up to date.
+Compiling vhdl file "/home/pin3da/Repos/Processor/MUX2_module.vhd" in Library work.
+Architecture behavioral of Entity mux2_module is up to date.
+Compiling vhdl file "/home/pin3da/Repos/Processor/MUX3_module.vhd" in Library work.
+Architecture behavioral of Entity mux3_module is up to date.
+Compiling vhdl file "/home/pin3da/Repos/Processor/MUX4_module.vhd" in Library work.
+Architecture behavioral of Entity mux4_module is up to date.
+Compiling vhdl file "/home/pin3da/Repos/Processor/PC_module.vhd" in Library work.
+Architecture behavioral of Entity pc_module is up to date.
+Compiling vhdl file "/home/pin3da/Repos/Processor/PSRModifier.vhd" in Library work.
+Architecture arch_psrm of Entity psrmodifier is up to date.
+Compiling vhdl file "/home/pin3da/Repos/Processor/PSR_module.vhd" in Library work.
+Architecture behavioral of Entity psr_module is up to date.
+Compiling vhdl file "/home/pin3da/Repos/Processor/RegisterFile_module.vhd" in Library work.
+Architecture behavioral of Entity registerfile_module is up to date.
+Compiling vhdl file "/home/pin3da/Repos/Processor/SEU_module.vhd" in Library work.
+Architecture behavioral of Entity seu_module is up to date.
+Compiling vhdl file "/home/pin3da/Repos/Processor/WindowManager.vhd" in Library work.
+Architecture arch_wm of Entity windowmanager is up to date.
+Compiling vhdl file "/home/pin3da/Repos/Processor/Processor.vhd" in Library work.
+Entity <processor> compiled.
+Entity <processor> (Architecture <behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.29 secs
+ 
+--> 
+
+
+Total memory usage is 473912 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -22,7 +22,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity PSRModifier is
-    Port ( crs1 : in  STD_LOGIC_VECTOR (31 downto 0);
+    Port ( reset : in STD_LOGIC;
+		   crs1 : in  STD_LOGIC_VECTOR (31 downto 0);
            crs2 : in  STD_LOGIC_VECTOR (31 downto 0);
            ALUOp : in  STD_LOGIC_VECTOR (7 downto 0);
            ALUOut : in  STD_LOGIC_VECTOR (31 downto 0);
@@ -32,8 +33,10 @@ end PSRModifier;
 architecture arch_PSRM of PSRModifier is
 
 begin
-   process(crs1,crs2,ALUOp,ALUOut) begin
-  
+   process(crs1,crs2,ALUOp,ALUOut,reset) begin
+  	  if(reset = '1')then
+	  	NZVC <= "0000";
+	  else
 		if(ALUOut = x"00000000")then -- Supports all icc modifications for logical instructions (not overflow or carry)
 			NZVC(3) <= '1';
 		else 
@@ -57,6 +60,7 @@ begin
 				NZVC(0)<='0';
 			end if;
 		end if;
+	  end if;
    end process;
 
 end arch_PSRM;

@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "F:/Documentos/Arquitectura/Processor/tb_ALU_isim_beh.exe" -prj "F:/Documentos/Arquitectura/Processor/tb_ALU_beh.prj" "work.tb_ALU" 
+-intstyle "ise" -incremental -o "/home/pin3da/Repos/Processor/tb_Processor_isim_beh.exe" -prj "/home/pin3da/Repos/Processor/tb_Processor_beh.prj" "work.tb_Processor" 

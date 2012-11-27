@@ -23,7 +23,8 @@ use IEEE.NUMERIC_STD.ALL;
 use IEEE.std_logic_unsigned.all;
 
 entity WindowManager is
-    Port ( cwp : in  STD_LOGIC_VECTOR (4 downto 0);
+    Port ( reset : in std_logic; 
+		   cwp : in  STD_LOGIC_VECTOR (4 downto 0);
            rs1 : in  STD_LOGIC_VECTOR (4 downto 0);
            rs2 : in  STD_LOGIC_VECTOR (4 downto 0);
            rd : in  STD_LOGIC_VECTOR (4 downto 0);
@@ -40,37 +41,70 @@ signal tmp1 : std_logic_vector(5 downto 0);
 signal tmp2 : std_logic_vector(5 downto 0);
 signal tmp3 : std_logic_vector(5 downto 0);
 begin
-   process(cwp,rs1,rs2,rd,op3,tmp1,tmp2,tmp3)begin
-		if((op3="111100") or (op3="111101"))then -- save or restore operation
-			if(cwp = "00000")then
-				ncwp <= "00001";
-			else
-				ncwp <= "00000";
-			end if;
-				nrd <= "000000"; -- for safety
-		elsif(cwp = "00001") then
-			if(rs1 > "00111") then
-				tmp1(4 downto 0) <= rs1;
-				nrs1 <= tmp1 + 16; -- offset
-			else
-				nrs1(4 downto 0) <= rs1;
-			end if;
-			if(rs2 > "00111") then
-				tmp2(4 downto 0) <= rs2;
-				nrs2 <= tmp2 + 16; -- offset
-			else
-				nrs2(4 downto 0) <= rs2;
-			end if;
-			if(rd > "00111") then
-				tmp3(4 downto 0) <= rd;
-				nrd <= tmp3 + 16; -- offset
-			else
-				nrd(4 downto 0) <= rd;
-			end if;
-			
-			no7 <= "011111";
+   process(reset,cwp,rs1,rs2,rd,op3,tmp1,tmp2,tmp3)begin
+   		if(reset = '1')then
+			ncwp <= "00000";
+			nrs1 <= "000000";
+			nrs2 <= "000000";
+			nrd <= "000000";
+			no7 <= "000000";
 		else
-			no7 <= "001111";
+				if((op3="111100") or (op3="111101"))then -- save or restore operation
+					if(cwp = "00000")then
+						ncwp <= "00001";
+						nrs1(4 downto 0) <= rs1;
+						nrs2(4 downto 0) <= rs2;
+						nrd(4 downto 0) <= rd;
+					else
+						ncwp <= "00000";
+						if(rs1 > "00111") then
+							tmp1(4 downto 0) <= rs1;
+							nrs1 <= tmp1 + 16; -- offset
+						else
+							nrs1(4 downto 0) <= rs1;
+						end if;
+						if(rs2 > "00111") then
+							tmp2(4 downto 0) <= rs2;
+							nrs2 <= tmp2 + 16; -- offset
+						else
+							nrs2(4 downto 0) <= rs2;
+						end if;
+						if(rd > "00111") then
+							tmp3(4 downto 0) <= rd;
+							nrd <= tmp3 + 16; -- offset   
+						else
+							nrd(4 downto 0) <= rd;
+						end if;
+					end if;
+						--nrd <= "000000"; -- for safety
+				elsif(cwp = "00001") then
+					ncwp <= "00001";
+					if(rs1 > "00111") then
+						tmp1(4 downto 0) <= rs1;
+						nrs1 <= tmp1 + 16; -- offset
+					else
+						nrs1(4 downto 0) <= rs1;
+					end if;
+					if(rs2 > "00111") then
+						tmp2(4 downto 0) <= rs2;
+						nrs2 <= tmp2 + 16; -- offset
+					else
+						nrs2(4 downto 0) <= rs2;
+					end if;
+					if(rd > "00111") then
+						tmp3(4 downto 0) <= rd;
+						nrd <= tmp3 + 16; -- offset
+					else
+						nrd(4 downto 0) <= rd;
+					end if;
+					no7 <= "011111";
+				else
+					ncwp <= "00000";
+					nrs1(4 downto 0) <= rs1;
+					nrs2(4 downto 0) <= rs2;
+					nrd(4 downto 0) <= rd;
+					no7 <= "001111";
+				end if;
 		end if;
    
    end process;

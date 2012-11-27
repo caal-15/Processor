@@ -1,25 +1,5 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    08:47:21 11/22/2012 
--- Design Name: 
--- Module Name:    Processor - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
 
 
 entity Processor is
@@ -148,6 +128,7 @@ COMPONENT MUX4_module
 	
 	COMPONENT PSRModifier
 	PORT(
+		reset : IN std_logic;
 		crs1 : IN std_logic_vector(31 downto 0);
 		crs2 : IN std_logic_vector(31 downto 0);
 		ALUOp : IN std_logic_vector(7 downto 0);
@@ -191,6 +172,7 @@ COMPONENT PSR_module
 		
 	COMPONENT WindowManager
 	PORT(
+		reset : in std_logic;
 		cwp : IN std_logic_vector(4 downto 0);
 		rs1 : IN std_logic_vector(4 downto 0);
 		rs2 : IN std_logic_vector(4 downto 0);
@@ -211,39 +193,39 @@ COMPONENT PSR_module
 		);
 	END COMPONENT;
 	
-signal nPCtoPC : std_logic_vector (4 downto 0);
-signal PCtoOthers : std_logic_vector(4 downto 0);
-signal IMout : std_logic_vector(31 downto 0);
-signal nrdWM : std_logic_vector (5 downto 0);
-signal o7WM : std_logic_vector (5 downto 0);
-signal pc_4 : std_logic_vector (4 downto 0);
-signal disp22e : std_logic_vector (31 downto 0);
-signal disp22_PC : std_logic_vector (31 downto 0);
-signal disp30_PC : std_logic_vector (31 downto 0);	
-signal cualuop : std_logic_vector (7 downto 0);
-signal carry_p : std_logic;
-signal crs1_p : std_logic_vector (31 downto 0);
-signal crs2_p : std_logic_vector (31 downto 0);
-signal seusimm13 : std_logic_vector (31 downto 0);
-signal frs2 : std_logic_vector (31 downto 0);
-signal ALUout : std_logic_vector (31 downto 0); 
-signal icc_p : std_logic_vector (3 downto 0); 
-signal wren_p : std_logic;
-signal rfdest_p : std_logic;
-signal rfsource_p : std_logic_vector (1 downto 0); 
-signal pcsource_p : std_logic_vector (1 downto 0);
-signal rdenmem_p : std_logic;
-signal wrenmem_p : std_logic;
-signal crd_p : std_logic_vector (31 downto 0); 
-signal datatoreg_p : std_logic_vector (31 downto 0); 
-signal datatomux : std_logic_vector (31 downto 0); 
-signal mux1torf : std_logic_vector (5 downto 0);
-signal nrs1_p : std_logic_vector (5 downto 0);
-signal nrs2_p : std_logic_vector (5 downto 0);
-signal cwp_p : std_logic_vector (4 downto 0);
-signal ncwp_p : std_logic_vector (4 downto 0);
-signal nzvc_p : std_logic_vector (3 downto 0);
-signal mux3tonpc : std_logic_vector (4 downto 0);
+signal nPCtoPC : std_logic_vector (4 downto 0) := (others => '0');
+signal PCtoOthers : std_logic_vector(4 downto 0):= (others => '0');
+signal IMout : std_logic_vector(31 downto 0):= (others => '0');
+signal nrdWM : std_logic_vector (5 downto 0):= (others => '0');
+signal o7WM : std_logic_vector (5 downto 0):= (others => '0');
+signal pc_4 : std_logic_vector (4 downto 0):= (others => '0');
+signal disp22e : std_logic_vector (31 downto 0):= (others => '0');
+signal disp22_PC : std_logic_vector (31 downto 0):= (others => '0');
+signal disp30_PC : std_logic_vector (31 downto 0):= (others => '0');
+signal cualuop : std_logic_vector (7 downto 0):= (others => '0');
+signal carry_p : std_logic:='0';
+signal crs1_p : std_logic_vector (31 downto 0):= (others => '0');
+signal crs2_p : std_logic_vector (31 downto 0):= (others => '0');
+signal seusimm13 : std_logic_vector (31 downto 0):= (others => '0');
+signal frs2 : std_logic_vector (31 downto 0):= (others => '0');
+signal ALUout : std_logic_vector (31 downto 0):= (others => '0');
+signal icc_p : std_logic_vector (3 downto 0):= (others => '0');
+signal wren_p : std_logic:='0';
+signal rfdest_p : std_logic:='0';
+signal rfsource_p : std_logic_vector (1 downto 0):= (others => '0');
+signal pcsource_p : std_logic_vector (1 downto 0):= (others => '0');
+signal rdenmem_p : std_logic:='0';
+signal wrenmem_p : std_logic:='0';
+signal crd_p : std_logic_vector (31 downto 0);
+signal datatoreg_p : std_logic_vector (31 downto 0):= (others => '0');
+signal datatomux : std_logic_vector (31 downto 0):= (others => '0');
+signal mux1torf : std_logic_vector (5 downto 0):= (others => '0');
+signal nrs1_p : std_logic_vector (5 downto 0):= (others => '0');
+signal nrs2_p : std_logic_vector (5 downto 0):= (others => '0');
+signal cwp_p : std_logic_vector (4 downto 0):= (others => '0');
+signal ncwp_p : std_logic_vector (4 downto 0):= (others => '0');
+signal nzvc_p : std_logic_vector (3 downto 0):= (others => '0');
+signal mux3tonpc : std_logic_vector (4 downto 0):= (others => '0');
 
 
 
@@ -345,6 +327,7 @@ begin
 
 
 	Inst_PSRModifier: PSRModifier PORT MAP(
+		reset => reset,
 		crs1 => crs1_p ,
 		crs2 => crs2_p,
 		ALUOp => cualuop,
@@ -377,6 +360,7 @@ begin
 		seuOut =>  seusimm13
 	);
 	Inst_WindowManager: WindowManager PORT MAP(
+		reset => reset,
 		cwp => cwp_p,
 		rs1 => IMout (18 downto 14),
 		rs2 => IMout (4 downto 0) ,
