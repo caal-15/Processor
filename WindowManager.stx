@@ -1,28 +1,24 @@
-Release 14.2 - xst P.28xd (lin64)
+Release 14.2 - xst P.28xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
---> 
-Parameter TMPDIR set to /home/pin3da/Repos/Processor/xst/projnav.tmp
+--> Parameter TMPDIR set to F:/Documentos/Arquitectura/Processor/xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.11 secs
  
---> 
-Parameter xsthdpdir set to /home/pin3da/Repos/Processor/xst
+--> Parameter xsthdpdir set to F:/Documentos/Arquitectura/Processor/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.11 secs
  
---> 
-WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "/home/pin3da/Repos/Processor/WindowManager.vhd" in Library work.
-Entity <windowmanager> compiled.
-Entity <windowmanager> (Architecture <arch_wm>) compiled.
+Compiling vhdl file "F:/Documentos/Arquitectura/Processor/WindowManager.vhd" in Library work.
+Architecture arch_wm of Entity windowmanager is up to date.
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -30,8 +26,7 @@ Total CPU time to Xst completion: 0.18 secs
  
 --> 
 
-
-Total memory usage is 469080 kilobytes
+Total memory usage is 206676 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

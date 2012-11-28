@@ -16,7 +16,7 @@ AR adder1_module behavioral /home/pin3da/Repos/Processor/ADDER1_module.vhd sub00
 AR mux1_module behavioral /home/pin3da/Repos/Processor/MUX1_module.vhd sub00/vhpl21 1354033866
 EN mux4_module NULL /home/pin3da/Repos/Processor/MUX4_module.vhd sub00/vhpl26 1354033871
 AR mux4_module behavioral /home/pin3da/Repos/Processor/MUX4_module.vhd sub00/vhpl27 1354033872
-EN windowmanager NULL /home/pin3da/Repos/Processor/WindowManager.vhd sub00/vhpl34 1354033883
+EN windowmanager NULL F:/Documentos/Arquitectura/Processor/WindowManager.vhd sub00/vhpl34 1354128523
 EN psr_module NULL /home/pin3da/Repos/Processor/PSR_module.vhd sub00/vhpl04 1354033877
 AR seu22_module behavioral /home/pin3da/Repos/Processor/SEU22_module.vhd sub00/vhpl37 1354033850
 AR pc_module behavioral /home/pin3da/Repos/Processor/PC_module.vhd sub00/vhpl29 1354033874
@@ -31,7 +31,7 @@ EN adder3_module NULL /home/pin3da/Repos/Processor/ADDER3_module.vhd sub00/vhpl1
 AR adder2_module behavioral /home/pin3da/Repos/Processor/ADDER2_module.vhd sub00/vhpl11 1354033854
 AR mux2_module behavioral /home/pin3da/Repos/Processor/MUX2_module.vhd sub00/vhpl23 1354033868
 AR seu_module behavioral /home/pin3da/Repos/Processor/SEU_module.vhd sub00/vhpl33 1354033882
-AR windowmanager arch_wm /home/pin3da/Repos/Processor/WindowManager.vhd sub00/vhpl35 1354033884
+AR windowmanager arch_wm F:/Documentos/Arquitectura/Processor/WindowManager.vhd sub00/vhpl35 1354128524
 EN cu_module NULL /home/pin3da/Repos/Processor/CU_module.vhd sub00/vhpl00 1354033859
 EN mux2_module NULL /home/pin3da/Repos/Processor/MUX2_module.vhd sub00/vhpl22 1354033867
 EN seu_module NULL /home/pin3da/Repos/Processor/SEU_module.vhd sub00/vhpl32 1354033881

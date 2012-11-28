@@ -37,9 +37,9 @@ entity WindowManager is
 end WindowManager;
 
 architecture arch_wm of WindowManager is
-signal tmp1 : std_logic_vector(5 downto 0);
-signal tmp2 : std_logic_vector(5 downto 0);
-signal tmp3 : std_logic_vector(5 downto 0);
+signal tmp1 : std_logic_vector(5 downto 0):="000000";
+signal tmp2 : std_logic_vector(5 downto 0):="000000";
+signal tmp3 : std_logic_vector(5 downto 0):="000000";
 begin
    process(reset,cwp,rs1,rs2,rd,op3,tmp1,tmp2,tmp3)begin
    		if(reset = '1')then
@@ -54,7 +54,10 @@ begin
 						ncwp <= "00001";
 						nrs1(4 downto 0) <= rs1;
 						nrs2(4 downto 0) <= rs2;
-						nrd(4 downto 0) <= rd;
+						if(rd > "00111") then
+							tmp3(4 downto 0) <= rd;
+							nrd <= tmp3 + 16; -- offset  
+						end if;
 					else
 						ncwp <= "00000";
 						if(rs1 > "00111") then

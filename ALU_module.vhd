@@ -40,32 +40,32 @@ begin
 				dataOut <= OP1 AND OP2;
 			when x"0A"	=> --ANDcc
 				dataOut <= OP1 AND OP2;	
-			when x"0B"	=> --ANDx
-				dataOut <= OP1 AND OP2;
-				dataOut(0) <= dataOut(0) AND Carry;
-			when x"0C"	=> --ANDxcc
-				dataOut <= OP1 AND OP2;
-				dataOut(0) <= dataOut(0) AND Carry;	
+			when x"0B"	=> --ANDn
+				dataOut <= not (OP1 AND OP2);
+				
+			when x"0C"	=> --ANDncc
+				dataOut <= not (OP1 AND OP2);
+				
 			when x"0D"	=> --OR
 				dataOut <= OP1 OR OP2;
 			when x"0E"	=> --ORcc
 				dataOut <= OP1 OR OP2;	
-			when x"0F"	=> --ORx
-				dataOut <= OP1 OR OP2;
-				dataOut(0) <= dataOut(0) OR Carry;
-			when x"10"	=> --ORxcc
-				dataOut <= OP1 OR OP2;
-				dataOut(0) <= dataOut(0) OR Carry;	
+			when x"0F"	=> --ORn
+				dataOut <= not (OP1 OR OP2);
+				
+			when x"10"	=> --ORncc
+				dataOut <= not (OP1 OR OP2);
+				
 			when x"11"	=> --XOR
 				dataOut <= OP1 XOR OP2;
 			when x"12"	=> --XORcc
 				dataOut <= OP1 XOR OP2;	
-			when x"13"	=> --XORx
-				dataOut <= OP1 XOR OP2;
-				dataOut(0) <= dataOut(0) XOR Carry;
-			when x"14"	=> --XORxcc
-				dataOut <= OP1 XOR OP2;
-				dataOut(0) <= dataOut(0) XOR Carry;	
+			when x"13"	=> --XORn
+				dataOut <= not (OP1 XOR OP2);
+				
+			when x"14"	=> --XORncc
+				dataOut <= not (OP1 XOR OP2);
+				
 			when x"15"	=> --SLL
 				dataOut(31 downto conv_integer(OP2)) <= OP1(31 downto conv_integer(OP2));
 				dataOut((conv_integer(OP2)-1) downto 0) <= (others => '0');
@@ -79,7 +79,7 @@ begin
 				dataOut <= OP1 + OP2;
 			when x"19"  => --SAVE
 				dataOut <= OP1 + OP2;
-			when x"1A"  => --STORE
+			when x"1A"  => --RESTORE
 				dataOut <= OP1 + OP2;
 						
 			when others =>
