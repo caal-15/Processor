@@ -10,10 +10,10 @@ end ADDER1_module;
 architecture Behavioral of ADDER1_module is
 
 begin
-process(OP1) begin
+--process(OP1) begin
 
 AddOut <= OP1 + 1;
 
-end process;
+--end process;
 end Behavioral;
 

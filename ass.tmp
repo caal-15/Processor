@@ -1,0 +1,5 @@
+or %g0,%o0 ,%g1 
+subcc %o1, 0
+ble +5
+NOP
+addcc g1,-1,g1

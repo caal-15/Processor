@@ -38,7 +38,7 @@ begin
 return temp_mem;
 end function;
 
-signal instruction : rom_type := InitRomFromFile("program2.data");
+signal instruction : rom_type := InitRomFromFile("program3.data");
 
 begin 
 

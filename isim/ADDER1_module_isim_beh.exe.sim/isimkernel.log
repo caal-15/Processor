@@ -1,0 +1,29 @@
+Command line:
+   ADDER1_module_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57354
+
+Wed Nov 28 22:24:28 2012
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 180.113 Meg
+
+ Total Signals          : 2
+ Total Nets             : 10
+ Total Signal Drivers   : 1
+ Total Blocks           : 4
+ Total Primitive Blocks : 4
+ Total Processes        : 1
+ Total Traceable Variables  : 10
+ Total Scalar Nets and Variables : 388
+Total Line Count : 1
+
+ Total Simulation Time: 0.03 sec
+
+ Current Memory Usage: 188.506 Meg
+
+Wed Nov 28 22:24:43 2012
+

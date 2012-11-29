@@ -8,8 +8,8 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity RegisterFile_module is
     Port ( 
-			  reset : in STD_LOGIC; 
-			  nRS1 : in  STD_LOGIC_VECTOR (5 downto 0);
+		   reset : in STD_LOGIC; 
+  		   nRS1 : in  STD_LOGIC_VECTOR (5 downto 0);
            nRS2 : in  STD_LOGIC_VECTOR (5 downto 0);
            nRSD : in  STD_LOGIC_VECTOR (5 downto 0);
            DATATOREG : in  STD_LOGIC_VECTOR (31 downto 0);
@@ -30,22 +30,18 @@ begin
 process( reset, wren, nrs1, nrs2, nrsd, datatoreg, registers)
 
 begin
-
-	
 	if(reset = '1')then
-	CRS1 <= (others => '0');
-	CRS2 <= (others => '0');
-	CRSD <= (others => '0');
+		CRS1 <= (others => '0');
+		CRS2 <= (others => '0');
+		CRSD <= (others => '0');
 	else 
-		CRS1 <= registers(conv_integer(nRS1));
-		CRS2 <= registers(conv_integer(nRS2));
-		CRSD <= registers(conv_integer(nRSD));
-			if(wren = '1' and nRSD /= "000000")then
-				registers(conv_integer(nRSD)) <= DATATOREG;  
-			end if;
+		crs1 <= registers(conv_integer(nrs1));
+		crs2 <= registers(conv_integer(nrs2));
+		crsd <= registers(conv_integer(nrsd));
+		if(wren = '1' and nRSD /= "000000")then
+			registers(conv_integer(nRSD)) <= DATATOREG;  
+		end if;
 	end if;
-
-
 end process; 
 end Behavioral;
 

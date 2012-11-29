@@ -16,11 +16,11 @@ architecture Behavioral of ADDER2_module is
 
 
 begin
-process(OP1, OP2) begin 
+--process(OP1, OP2) begin 
 
 AddOut <= OP1 + OP2;
 
 
-end process;
+--end process;
 end Behavioral;
 
