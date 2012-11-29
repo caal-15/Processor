@@ -1,5 +1,5 @@
-set -tmpdir "F:/Documentos/Arquitectura/Processor/xst/projnav.tmp"
-set -xsthdpdir "F:/Documentos/Arquitectura/Processor/xst"
+set -tmpdir "/home/pin3da/Repos/Processor/xst/projnav.tmp"
+set -xsthdpdir "/home/pin3da/Repos/Processor/xst"
 elaborate
 -ifn InstMemory_module.prj
 -ifmt mixed

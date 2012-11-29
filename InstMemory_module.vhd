@@ -14,46 +14,31 @@ entity InstMemory_module is
 end InstMemory_module;
 
 architecture Behavioral of InstMemory_module is
+	type RamType is array (0 to 31) of bit_vector (31 downto 0);
+   
+	impure function InitRamFromFile (RamFileName:in string) return RamType is
+		FILE RamFile:text is in RamFileName;
+		variable RamFileLine:line;
+		variable RAM:RamType;
+		begin 
+			for I in RamType 'range loop
+				readline (RamFile, RamFileLine);
+				read (RamFileLine, RAM(I));
+			end loop;
+			return RAM;
+		end function;
+signal RAM : RamType := InitRamFromFile("finaltest.data");
 
-type rom_type is array (0 to 14) of STD_LOGIC_VECTOR (31 downto 0);
-
-impure function InitRomFromFile (RomFileName : in string) return rom_type is
-
-FILE RomFile : text open read_mode is RomFileName;
-
-variable RomFileLine : line; 
-variable temp_bv : BIT_VECTOR (31 downto 0);
-variable temp_mem : rom_type;
-
-begin
-
-	for i in rom_type'range loop 
-
-	readline(RomFile, RomFileLine);
-	read(RomFileLine, temp_bv);
-	temp_mem(i) := to_stdlogicvector(temp_bv);
-
-	end loop;
-
-return temp_mem;
-end function;
-
-signal instruction : rom_type := InitRomFromFile("program3.data");
-
-begin 
-
-process(reset, address, instruction)
 
 begin
 
+	process(reset,address) begin
+			if(reset = '1') then
+				dataOut <= (others=>'0');
+			else
+				dataOut <= to_stdlogicvector(RAM(conv_integer(address)));
+			end if;
 	
-	if(reset = '1')then 
-		dataOut <= (others => '0');
-		else
-		dataOut <= instruction(conv_integer(address));
-	end if;
-	
-
-end process;
+	end process;
 end Behavioral;
 

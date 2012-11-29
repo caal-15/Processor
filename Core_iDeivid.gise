@@ -147,13 +147,17 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1354155934" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1354155934">
+    <transform xil_pn:end_ts="1354166037" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1354166037">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1354162177" xil_pn:in_ck="4533393903099352359" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1354162177">
+    <transform xil_pn:end_ts="1354166037" xil_pn:in_ck="4533393903099352359" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1354166037">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ADDER1_module.vhd"/>
       <outfile xil_pn:name="ADDER2_module.vhd"/>
       <outfile xil_pn:name="ADDER3_module.vhd"/>
@@ -180,21 +184,26 @@
       <outfile xil_pn:name="tb_Processor.vhd"/>
       <outfile xil_pn:name="tb_RegisterFile.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1354159489" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="3891446409685180619" xil_pn:start_ts="1354159489">
+    <transform xil_pn:end_ts="1354166037" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="3891446409685180619" xil_pn:start_ts="1354166037">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1354159489" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3985090552553839731" xil_pn:start_ts="1354159489">
+    <transform xil_pn:end_ts="1354166037" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3985090552553839731" xil_pn:start_ts="1354166037">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1354155934" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="6333057462176832907" xil_pn:start_ts="1354155934">
+    <transform xil_pn:end_ts="1354166037" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="6333057462176832907" xil_pn:start_ts="1354166037">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1354162177" xil_pn:in_ck="4533393903099352359" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1354162177">
+    <transform xil_pn:end_ts="1354166037" xil_pn:in_ck="4533393903099352359" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1354166037">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ADDER1_module.vhd"/>
       <outfile xil_pn:name="ADDER2_module.vhd"/>
       <outfile xil_pn:name="ADDER3_module.vhd"/>
@@ -221,9 +230,14 @@
       <outfile xil_pn:name="tb_Processor.vhd"/>
       <outfile xil_pn:name="tb_RegisterFile.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1354162183" xil_pn:in_ck="4533393903099352359" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2162417346020661336" xil_pn:start_ts="1354162177">
+    <transform xil_pn:end_ts="1354166043" xil_pn:in_ck="4533393903099352359" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2162417346020661336" xil_pn:start_ts="1354166037">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
@@ -231,9 +245,12 @@
       <outfile xil_pn:name="tb_Processor_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1354162183" xil_pn:in_ck="-1550956411314948262" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2299676739306571525" xil_pn:start_ts="1354162183">
+    <transform xil_pn:end_ts="1354166043" xil_pn:in_ck="-1550956411314948262" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2299676739306571525" xil_pn:start_ts="1354166043">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="tb_Processor_isim_beh.wdb"/>

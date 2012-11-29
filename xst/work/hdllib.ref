@@ -21,8 +21,8 @@ EN psr_module NULL /home/pin3da/Repos/Processor/PSR_module.vhd sub00/vhpl04 1354
 AR seu22_module behavioral /home/pin3da/Repos/Processor/SEU22_module.vhd sub00/vhpl37 1354154954
 AR pc_module behavioral /home/pin3da/Repos/Processor/PC_module.vhd sub00/vhpl29 1354154978
 EN processor NULL /home/pin3da/Repos/Processor/Processor.vhd sub00/vhpl38 1354154989
-AR instmemory_module behavioral /home/pin3da/Repos/Processor/InstMemory_module.vhd sub00/vhpl19 1354154968
-EN instmemory_module NULL /home/pin3da/Repos/Processor/InstMemory_module.vhd sub00/vhpl18 1354154967
+AR instmemory_module behavioral /home/pin3da/Repos/Processor/InstMemory_module.vhd sub00/vhpl19 1354165733
+EN instmemory_module NULL /home/pin3da/Repos/Processor/InstMemory_module.vhd sub00/vhpl18 1354165732
 EN mux3_module NULL /home/pin3da/Repos/Processor/MUX3_module.vhd sub00/vhpl24 1354154973
 AR alu_module behavioral /home/pin3da/Repos/Processor/ALU_module.vhd sub00/vhpl15 1354154962
 AR datamem_module behavioral /home/pin3da/Repos/Processor/DataMem_module.vhd sub00/vhpl17 1354154966
