@@ -67,7 +67,7 @@ begin
 				dataOut <= not (OP1 XOR OP2);
 				
 			when x"15"	=> --SLL
-				dataOut(31 downto conv_integer(OP2)) <= OP1(31 downto conv_integer(OP2));
+				dataOut(31 downto conv_integer(OP2)) <= OP1((31 - conv_integer(OP2)) downto 0);
 				dataOut((conv_integer(OP2)-1) downto 0) <= (others => '0');
 			when x"16"	=> --SRL
 				dataOut((31-conv_integer(OP2)) downto 0) <= OP1(31 downto conv_integer(OP2));

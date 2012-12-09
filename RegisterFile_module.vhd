@@ -10,6 +10,7 @@ entity RegisterFile_module is
     Port ( 
 		   reset : in STD_LOGIC; 
   		   nRS1 : in  STD_LOGIC_VECTOR (5 downto 0);
+			
            nRS2 : in  STD_LOGIC_VECTOR (5 downto 0);
            nRSD : in  STD_LOGIC_VECTOR (5 downto 0);
            DATATOREG : in  STD_LOGIC_VECTOR (31 downto 0);
@@ -30,6 +31,7 @@ begin
 process( reset, wren, nrs1, nrs2, nrsd, datatoreg, registers)
 
 begin
+
 	if(reset = '1')then
 		CRS1 <= (others => '0');
 		CRS2 <= (others => '0');
@@ -42,6 +44,7 @@ begin
 			registers(conv_integer(nRSD)) <= DATATOREG;  
 		end if;
 	end if;
+	
 end process; 
 end Behavioral;
 

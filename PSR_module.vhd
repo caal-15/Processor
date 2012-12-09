@@ -22,9 +22,9 @@ if(rising_edge(clkFPGA))then
 		CWP <= (others => '0');
 		icc <= (others => '0');
 	else
-	   Carry <= '0';--NZVC(0);
-	   icc <= (others =>'0');--NZVC;
-	   CWP <= (others =>'0'); --nCWP;
+	   Carry <= NZVC(0);
+	   icc <= NZVC;
+	   CWP <= nCWP;
 	end if;
 end if;
 end process;

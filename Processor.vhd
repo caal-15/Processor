@@ -72,6 +72,7 @@ COMPONENT DataMem_module
 	
 	COMPONENT InstMemory_module
 	PORT(
+		clkFPGA : in std_logic;
 		reset : IN std_logic;
 		address : IN std_logic_vector(4 downto 0);          
 		dataOut : OUT std_logic_vector(31 downto 0)
@@ -151,6 +152,7 @@ COMPONENT PSR_module
 	
 	COMPONENT RegisterFile_module
 	PORT(
+		
 		reset : IN std_logic;
 		nRS1 : IN std_logic_vector(5 downto 0);
 		nRS2 : IN std_logic_vector(5 downto 0);
@@ -280,7 +282,7 @@ begin
 		DataToMem => datatomux 
 	);
 	Inst_InstMemory_module: InstMemory_module PORT MAP(
-		
+		clkFPGA=>clk,
 		reset => reset,
 		address => PCtoOthers,
 		dataOut => IMout 

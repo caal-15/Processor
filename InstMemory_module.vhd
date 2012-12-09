@@ -8,6 +8,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity InstMemory_module is
     Port ( 
+			  clkFPGA: in std_logic;
 		     reset : in STD_LOGIC;
 			  address : in  STD_LOGIC_VECTOR (4 downto 0);
            dataOut : out  STD_LOGIC_VECTOR (31 downto 0));
@@ -27,18 +28,19 @@ architecture Behavioral of InstMemory_module is
 			end loop;
 			return RAM;
 		end function;
-signal RAM : RamType := InitRamFromFile("finaltest.data");
+signal RAM : RamType := InitRamFromFile("test2.data");
 
 
 begin
 
-	process(reset,address) begin
+	process(reset,address,clkFPGA) begin
+		if(rising_edge(clkFPGA)) then
 			if(reset = '1') then
 				dataOut <= (others=>'0');
 			else
 				dataOut <= to_stdlogicvector(RAM(conv_integer(address)));
 			end if;
-	
+	   end if; 
 	end process;
 end Behavioral;
 
