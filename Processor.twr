@@ -1,0 +1,150 @@
+--------------------------------------------------------------------------------
+Release 14.2 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+F:\Windows\ISE\14.2\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3
+-s 4 -n 3 -fastpaths -xml Processor.twx Processor.ncd -o Processor.twr
+Processor.pcf -ucf Processor.ucf
+
+Design file:              Processor.ncd
+Physical constraint file: Processor.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2012-07-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+DataOut<0>  |   22.760(R)|clk_IBUF          |   0.000|
+DataOut<1>  |   22.149(R)|clk_IBUF          |   0.000|
+DataOut<2>  |   22.605(R)|clk_IBUF          |   0.000|
+DataOut<3>  |   22.542(R)|clk_IBUF          |   0.000|
+DataOut<4>  |   23.688(R)|clk_IBUF          |   0.000|
+DataOut<5>  |   19.939(R)|clk_IBUF          |   0.000|
+DataOut<6>  |   21.190(R)|clk_IBUF          |   0.000|
+DataOut<7>  |   19.969(R)|clk_IBUF          |   0.000|
+DataOut<8>  |   18.927(R)|clk_IBUF          |   0.000|
+DataOut<9>  |   18.003(R)|clk_IBUF          |   0.000|
+DataOut<10> |   20.352(R)|clk_IBUF          |   0.000|
+DataOut<11> |   19.840(R)|clk_IBUF          |   0.000|
+DataOut<12> |   19.726(R)|clk_IBUF          |   0.000|
+DataOut<13> |   19.084(R)|clk_IBUF          |   0.000|
+DataOut<14> |   19.845(R)|clk_IBUF          |   0.000|
+DataOut<15> |   21.203(R)|clk_IBUF          |   0.000|
+DataOut<16> |   19.589(R)|clk_IBUF          |   0.000|
+DataOut<17> |   19.291(R)|clk_IBUF          |   0.000|
+DataOut<18> |   20.488(R)|clk_IBUF          |   0.000|
+DataOut<19> |   20.296(R)|clk_IBUF          |   0.000|
+DataOut<20> |   20.774(R)|clk_IBUF          |   0.000|
+DataOut<21> |   21.074(R)|clk_IBUF          |   0.000|
+DataOut<22> |   20.479(R)|clk_IBUF          |   0.000|
+DataOut<23> |   22.780(R)|clk_IBUF          |   0.000|
+DataOut<24> |   20.558(R)|clk_IBUF          |   0.000|
+DataOut<25> |   20.124(R)|clk_IBUF          |   0.000|
+DataOut<26> |   20.345(R)|clk_IBUF          |   0.000|
+DataOut<27> |   20.449(R)|clk_IBUF          |   0.000|
+DataOut<28> |   20.720(R)|clk_IBUF          |   0.000|
+DataOut<29> |   21.035(R)|clk_IBUF          |   0.000|
+DataOut<30> |   20.538(R)|clk_IBUF          |   0.000|
+DataOut<31> |   20.914(R)|clk_IBUF          |   0.000|
+------------+------------+------------------+--------+
+
+Clock reset to Pad
+------------+------------+----------------------------------+--------+
+            | clk (edge) |                                  | Clock  |
+Destination |   to PAD   |Internal Clock(s)                 | Phase  |
+------------+------------+----------------------------------+--------+
+DataOut<0>  |   41.998(F)|Inst_ALU_module/dataOut_0_not0001 |   0.000|
+DataOut<1>  |   42.076(F)|Inst_ALU_module/dataOut_1_not0001 |   0.000|
+DataOut<2>  |   41.078(F)|Inst_ALU_module/dataOut_2_not0001 |   0.000|
+DataOut<3>  |   40.138(F)|Inst_ALU_module/dataOut_3_not0001 |   0.000|
+DataOut<4>  |   41.850(F)|Inst_ALU_module/dataOut_4_not0001 |   0.000|
+DataOut<5>  |   38.307(F)|Inst_ALU_module/dataOut_5_not0001 |   0.000|
+DataOut<6>  |   41.016(F)|Inst_ALU_module/dataOut_6_not0001 |   0.000|
+DataOut<7>  |   38.856(F)|Inst_ALU_module/dataOut_7_not0001 |   0.000|
+DataOut<8>  |   38.889(F)|Inst_ALU_module/dataOut_8_not0001 |   0.000|
+DataOut<9>  |   38.467(F)|Inst_ALU_module/dataOut_9_not0001 |   0.000|
+DataOut<10> |   40.090(F)|Inst_ALU_module/dataOut_10_not0001|   0.000|
+DataOut<11> |   40.306(F)|Inst_ALU_module/dataOut_11_not0001|   0.000|
+DataOut<12> |   38.177(F)|Inst_ALU_module/dataOut_12_not0001|   0.000|
+DataOut<13> |   41.518(F)|Inst_ALU_module/dataOut_13_not0001|   0.000|
+DataOut<14> |   46.332(F)|Inst_ALU_module/dataOut_14_not0001|   0.000|
+DataOut<15> |   40.913(F)|Inst_ALU_module/dataOut_15_not0001|   0.000|
+DataOut<16> |   39.086(F)|Inst_ALU_module/dataOut_16_not0001|   0.000|
+DataOut<17> |   40.089(F)|Inst_ALU_module/dataOut_17_not0001|   0.000|
+DataOut<18> |   44.161(F)|Inst_ALU_module/dataOut_18_not0001|   0.000|
+DataOut<19> |   45.297(F)|Inst_ALU_module/dataOut_19_not0001|   0.000|
+DataOut<20> |   44.116(F)|Inst_ALU_module/dataOut_20_not0001|   0.000|
+DataOut<21> |   45.785(F)|Inst_ALU_module/dataOut_21_not0001|   0.000|
+DataOut<22> |   44.383(F)|Inst_ALU_module/dataOut_22_not0001|   0.000|
+DataOut<23> |   46.289(F)|Inst_ALU_module/dataOut_23_not0001|   0.000|
+DataOut<24> |   44.158(F)|Inst_ALU_module/dataOut_24_not0001|   0.000|
+DataOut<25> |   41.612(F)|Inst_ALU_module/dataOut_25_not0001|   0.000|
+DataOut<26> |   42.030(F)|Inst_ALU_module/dataOut_26_not0001|   0.000|
+DataOut<27> |   43.442(F)|Inst_ALU_module/dataOut_27_not0001|   0.000|
+DataOut<28> |   40.912(F)|Inst_ALU_module/dataOut_28_not0001|   0.000|
+DataOut<29> |   41.379(F)|Inst_ALU_module/dataOut_29_not0001|   0.000|
+DataOut<30> |   39.833(F)|Inst_ALU_module/dataOut_30_not0001|   0.000|
+DataOut<31> |   38.518(F)|Inst_ALU_module/dataOut_31_not0001|   0.000|
+------------+------------+----------------------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    9.639|         |         |         |
+reset          |    3.546|   42.343|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   10.781|         |   41.728|         |
+reset          |    2.170|         |   37.233|   32.039|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Fri Dec 07 08:25:43 2012 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 389 MB
+
+
+

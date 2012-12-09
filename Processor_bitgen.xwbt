@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\Documentos\Arquitectura\Processor\Processor.ncd
+OUTFILE=F:\Documentos\Arquitectura\Processor\Processor.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=F:\Documentos\Arquitectura\Processor
+LICENSE=WebPack
+USER_INFO=210663646_0_0_170

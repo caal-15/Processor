@@ -1,0 +1,22 @@
+xst -intstyle ise -ifn "F:/Documentos/Arquitectura/Processor/Chronometer.xst" -ofn "F:/Documentos/Arquitectura/Processor/Chronometer.syr" 
+xst -intstyle ise -ifn "F:/Documentos/Arquitectura/Processor/Chronometer.xst" -ofn "F:/Documentos/Arquitectura/Processor/Chronometer.syr" 
+xst -intstyle ise -ifn "F:/Documentos/Arquitectura/Processor/Chronometer.xst" -ofn "F:/Documentos/Arquitectura/Processor/Chronometer.syr" 
+xst -intstyle ise -ifn "F:/Documentos/Arquitectura/Processor/Chronometer.xst" -ofn "F:/Documentos/Arquitectura/Processor/Chronometer.syr" 
+xst -intstyle ise -ifn "F:/Documentos/Arquitectura/Processor/Chronometer.xst" -ofn "F:/Documentos/Arquitectura/Processor/Chronometer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Chronometer.ucf -p xc3s500e-fg320-4 Chronometer.ngc Chronometer.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Chronometer_map.ncd Chronometer.ngd Chronometer.pcf 
+par -w -intstyle ise -ol high -t 1 Chronometer_map.ncd Chronometer.ncd Chronometer.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Chronometer.ucf -p xc3s500e-fg320-4 Chronometer.ngc Chronometer.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Chronometer_map.ncd Chronometer.ngd Chronometer.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Chronometer.ucf -p xc3s500e-fg320-4 Chronometer.ngc Chronometer.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Chronometer_map.ncd Chronometer.ngd Chronometer.pcf 
+par -w -intstyle ise -ol high -t 1 Chronometer_map.ncd Chronometer.ncd Chronometer.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Chronometer.ucf -p xc3s500e-fg320-4 Chronometer.ngc Chronometer.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Chronometer_map.ncd Chronometer.ngd Chronometer.pcf 
+par -w -intstyle ise -ol high -t 1 Chronometer_map.ncd Chronometer.ncd Chronometer.pcf 
+xst -intstyle ise -ifn "F:/Documentos/Arquitectura/Processor/Chronometer.xst" -ofn "F:/Documentos/Arquitectura/Processor/Chronometer.syr" 
+xst -intstyle ise -ifn "F:/Documentos/Arquitectura/Processor/Chronometer.xst" -ofn "F:/Documentos/Arquitectura/Processor/Chronometer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Chronometer.ucf -p xc3s500e-fg320-4 Chronometer.ngc Chronometer.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Chronometer_map.ncd Chronometer.ngd Chronometer.pcf 
+par -w -intstyle ise -ol high -t 1 Chronometer_map.ncd Chronometer.ncd Chronometer.pcf 
+par -w -intstyle ise -ol high -t 1 Chronometer_map.ncd Chronometer.ncd Chronometer.pcf 

@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Fri Dec 07 17:02:27 2012
+# Process ID: 2084
+# Log file: F:/Documentos/Arquitectura/Processor/planAhead_run_1/planAhead.log
+# Journal file: F:/Documentos/Arquitectura/Processor/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source F:/Documentos/Arquitectura/Processor/pa.fromNetlist.tcl
+startgroup
+set_property package_pin B8 [get_ports clk_c]
+endgroup
+startgroup
+set_property package_pin B18 [get_ports reset_c]
+endgroup
+startgroup
+set_property package_pin F17 [get_ports {displaySelector_c[0]}]
+endgroup
+startgroup
+set_property package_pin H17 [get_ports {displaySelector_c[1]}]
+endgroup
+startgroup
+set_property package_pin C18 [get_ports {displaySelector_c[2]}]
+endgroup
+startgroup
+set_property package_pin F15 [get_ports {displaySelector_c[3]}]
+endgroup
+startgroup
+set_property package_pin C17 [get_ports {dataout_c[0]}]
+endgroup
+startgroup
+set_property package_pin H14 [get_ports {dataout_c[1]}]
+endgroup
+startgroup
+set_property package_pin J17 [get_ports {dataout_c[2]}]
+endgroup
+startgroup
+set_property package_pin G14 [get_ports {dataout_c[3]}]
+endgroup
+startgroup
+set_property package_pin D16 [get_ports {dataout_c[4]}]
+endgroup
+startgroup
+set_property package_pin D17 [get_ports {dataout_c[5]}]
+endgroup
+startgroup
+set_property package_pin F18 [get_ports {dataout_c[6]}]
+endgroup
+startgroup
+set_property package_pin L18 [get_ports {dataout_c[7]}]
+endgroup
+save_design

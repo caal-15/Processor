@@ -1,0 +1,902 @@
+Release 14.2 par P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+CARLOS-PC::  Fri Dec 07 08:23:41 2012
+
+par -w -intstyle ise -ol high -t 1 Processor_map.ncd Processor.ncd
+Processor.pcf 
+
+
+Constraints file: Processor.pcf.
+Loading device for application Rf_Device from file '3s500e.nph' in environment F:\Windows\ISE\14.2\ISE_DS\ISE\.
+   "Processor" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.27 2012-07-09".
+
+
+Design Summary Report:
+
+ Number of External IOBs                          34 out of 232    14%
+
+   Number of External Input IOBs                  2
+
+      Number of External Input IBUFs              2
+        Number of LOCed External Input IBUFs      2 out of 2     100%
+
+
+   Number of External Output IOBs                32
+
+      Number of External Output IOBs             32
+        Number of LOCed External Output IOBs      8 out of 32     25%
+
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of BUFGMUXs                       24 out of 24    100%
+   Number of RAMB16s                         1 out of 20      5%
+   Number of Slices                       2343 out of 4656   50%
+      Number of SLICEMs                    296 out of 2328   12%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 7 secs 
+Finished initial Timing Analysis.  REAL time: 7 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 7 secs 
+Total CPU  time at the beginning of Placer: 6 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:f2d9f586) REAL time: 9 secs 
+
+Phase 2.7  Design Feasibility Check
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: DataOut<31>
+   	 Comp: DataOut<30>
+   	 Comp: DataOut<29>
+   	 Comp: DataOut<28>
+   	 Comp: DataOut<27>
+   	 Comp: DataOut<26>
+   	 Comp: DataOut<25>
+   	 Comp: DataOut<24>
+   	 Comp: DataOut<23>
+   	 Comp: DataOut<22>
+   	 Comp: DataOut<21>
+   	 Comp: DataOut<20>
+   	 Comp: DataOut<19>
+   	 Comp: DataOut<18>
+   	 Comp: DataOut<17>
+   	 Comp: DataOut<16>
+   	 Comp: DataOut<15>
+   	 Comp: DataOut<14>
+   	 Comp: DataOut<13>
+   	 Comp: DataOut<12>
+   	 Comp: DataOut<11>
+   	 Comp: DataOut<10>
+   	 Comp: DataOut<9>
+   	 Comp: DataOut<8>
+
+INFO:Place:834 - Only a subset of IOs are locked. Out of 32 IOs, 8 are locked and 24 are not locked. If you would like
+   to print the names of these IOs, please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+Phase 2.7  Design Feasibility Check (Checksum:f2d9f586) REAL time: 9 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:f2d9f586) REAL time: 9 secs 
+
+WARNING:Place:414 - The input design contains local clock signal(s). To get a better result, we recommend users run map
+   with the "-timing" option set before starting the placement.
+Phase 4.2  Initial Clock and IO Placement
+.....
+Phase 4.2  Initial Clock and IO Placement (Checksum:40bbb146) REAL time: 9 secs 
+
+.....
+...............................................................................................
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:40bbb146) REAL time: 14 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:40bbb146) REAL time: 14 secs 
+
+Phase 7.3  Local Placement Optimization
+....
+Phase 7.3  Local Placement Optimization (Checksum:9efadadf) REAL time: 14 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:9efadadf) REAL time: 14 secs 
+
+Phase 9.8  Global Placement
+......................................................................................................................
+............
+Phase 9.8  Global Placement (Checksum:ee61b0f5) REAL time: 15 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:ee61b0f5) REAL time: 15 secs 
+
+Phase 11.18  Placement Optimization
+Phase 11.18  Placement Optimization (Checksum:371c3f1d) REAL time: 17 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:371c3f1d) REAL time: 17 secs 
+
+Total REAL time to Placer completion: 17 secs 
+Total CPU  time to Placer completion: 14 secs 
+Writing design to file Processor.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 18111 unrouted;      REAL time: 23 secs 
+
+Phase  2  : 17525 unrouted;      REAL time: 24 secs 
+
+Phase  3  : 6338 unrouted;      REAL time: 27 secs 
+
+Phase  4  : 6465 unrouted; (Par is working to improve performance)     REAL time: 28 secs 
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 40 secs 
+
+Updating file: Processor.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 43 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 50 secs 
+
+Updating file: Processor.ncd with current fully routed design.
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 6 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 6 secs 
+
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 7 secs 
+
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 7 secs 
+
+Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 7 secs 
+
+Phase 13  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 8 secs 
+WARNING:Route:455 - CLK Net:reset_IBUF may have excessive skew because 
+      3 CLK pins and 1063 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:clk_IBUF may have excessive skew because 
+      2 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_RegisterFile_module/registers_19_cmp_eq0000 may have excessive skew because 
+      4 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_RegisterFile_module/registers_9_cmp_eq0000 may have excessive skew because 
+      3 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_WindowManager/nrd_0_cmp_gt0000 may have excessive skew because 
+      0 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_RegisterFile_module/registers_30_cmp_eq0000 may have excessive skew because 
+      16 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_RegisterFile_module/registers_25_cmp_eq0000 may have excessive skew because 
+      1 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_RegisterFile_module/registers_27_cmp_eq0000 may have excessive skew because 
+      16 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_RegisterFile_module/registers_28_cmp_eq0000 may have excessive skew because 
+      1 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_DataMem_module/memory_20_cmp_eq0000 may have excessive skew because 
+      3 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_DataMem_module/memory_12_cmp_eq0000 may have excessive skew because 
+      2 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_DataMem_module/memory_21_cmp_eq0000 may have excessive skew because 
+      3 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_DataMem_module/memory_13_cmp_eq0000 may have excessive skew because 
+      1 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_DataMem_module/memory_30_cmp_eq0000 may have excessive skew because 
+      1 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_DataMem_module/memory_22_cmp_eq0000 may have excessive skew because 
+      3 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_DataMem_module/memory_14_cmp_eq0000 may have excessive skew because 
+      3 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_DataMem_module/memory_31_cmp_eq0000 may have excessive skew because 
+      3 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_DataMem_module/memory_23_cmp_eq0000 may have excessive skew because 
+      2 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_DataMem_module/memory_25_cmp_eq0000 may have excessive skew because 
+      3 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_DataMem_module/memory_26_cmp_eq0000 may have excessive skew because 
+      3 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_DataMem_module/memory_19_cmp_eq0000 may have excessive skew because 
+      2 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_DataMem_module/memory_28_cmp_eq0000 may have excessive skew because 
+      1 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_DataMem_module/memory_29_cmp_eq0000 may have excessive skew because 
+      3 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_DataMem_module/memory_3_cmp_eq0000 may have excessive skew because 
+      3 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_DataMem_module/memory_5_cmp_eq0000 may have excessive skew because 
+      2 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_DataMem_module/memory_7_cmp_eq0000 may have excessive skew because 
+      3 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:Inst_DataMem_module/memory_8_cmp_eq0000 may have excessive skew because 
+      3 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 1 mins 8 secs 
+Total CPU time to Router completion: 1 mins 5 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+WARNING:ParHelpers:79 - 
+   The following Clock signals are not routed on the dedicated
+   global clock routing resources. This will usually result in
+   longer delays and higher skew for the clock load pins. This could
+   be the result of incorrect clock placement, more than 8 clocks
+   feeding logic in a single quadrant of the device, or incorrect
+   logic partitioning into the quadrant(s). Check the timing report
+   to verify the delay and skew for this net
+Net Name: Inst_RegisterFile_module/registers_19_cmp_eq0000
+Net Name: Inst_RegisterFile_module/registers_9_cmp_eq0000
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_8_cmp |              |      |      |            |             |
+|             _eq0000 |  BUFGMUX_X0Y5| No   |   16 |  0.041     |  0.120      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_10_cm |              |      |      |            |             |
+|            p_eq0000 |  BUFGMUX_X3Y6| No   |   16 |  0.059     |  0.118      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_20_cm |              |      |      |            |             |
+|            p_eq0000 |  BUFGMUX_X0Y9| No   |   16 |  0.049     |  0.120      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_12_cm |              |      |      |            |             |
+|            p_eq0000 |  BUFGMUX_X3Y3| No   |   16 |  0.044     |  0.118      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_1_cmp |              |      |      |            |             |
+|             _eq0000 |  BUFGMUX_X0Y4| No   |   16 |  0.050     |  0.118      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_22_cm |              |      |      |            |             |
+|            p_eq0000 |  BUFGMUX_X3Y7| No   |   16 |  0.038     |  0.118      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_14_cm |              |      |      |            |             |
+|            p_eq0000 |  BUFGMUX_X0Y8| No   |   16 |  0.056     |  0.124      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_3_cmp |              |      |      |            |             |
+|             _eq0000 |  BUFGMUX_X3Y4| No   |   16 |  0.040     |  0.118      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_16_cm |              |      |      |            |             |
+|            p_eq0000 |  BUFGMUX_X0Y3| No   |   16 |  0.039     |  0.120      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_5_cmp |              |      |      |            |             |
+|             _eq0000 |  BUFGMUX_X3Y8| No   |   16 |  0.041     |  0.120      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_18_cm |              |      |      |            |             |
+|            p_eq0000 |  BUFGMUX_X0Y7| No   |   16 |  0.037     |  0.118      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_7_cmp |              |      |      |            |             |
+|             _eq0000 |  BUFGMUX_X3Y5| No   |   16 |  0.039     |  0.118      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_11_cm |              |      |      |            |             |
+|            p_eq0000 |  BUFGMUX_X3Y9| No   |   16 |  0.059     |  0.118      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_21_cm |              |      |      |            |             |
+|            p_eq0000 |  BUFGMUX_X0Y6| No   |   16 |  0.053     |  0.120      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_13_cm |              |      |      |            |             |
+|            p_eq0000 |  BUFGMUX_X2Y0| No   |   16 |  0.050     |  0.183      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_2_cmp |              |      |      |            |             |
+|             _eq0000 | BUFGMUX_X2Y10| No   |   16 |  0.053     |  0.184      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_0_not |              |      |      |            |             |
+|                0001 |  BUFGMUX_X1Y1| No   |   16 |  0.054     |  0.184      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_23_cm |              |      |      |            |             |
+|            p_eq0000 | BUFGMUX_X1Y11| No   |   16 |  0.057     |  0.181      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_15_cm |              |      |      |            |             |
+|            p_eq0000 |  BUFGMUX_X2Y1| No   |   16 |  0.049     |  0.175      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_4_cmp |              |      |      |            |             |
+|             _eq0000 | BUFGMUX_X2Y11| No   |   16 |  0.045     |  0.178      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_17_cm |              |      |      |            |             |
+|            p_eq0000 |  BUFGMUX_X1Y0| No   |   16 |  0.062     |  0.182      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_6_cmp |              |      |      |            |             |
+|             _eq0000 | BUFGMUX_X1Y10| No   |   16 |  0.046     |  0.184      |
++---------------------+--------------+------+------+------------+-------------+
+|          reset_IBUF |         Local|      | 1072 |  1.679     |  4.153      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|   DataToMem_not0001 |         Local|      |    5 |  0.212     |  2.113      |
++---------------------+--------------+------+------+------------+-------------+
+|            clk_IBUF |         Local|      |   11 |  1.152     |  3.668      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_19_cm |              |      |      |            |             |
+|            p_eq0000 |         Local|      |   17 |  3.626     |  3.698      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_9_cmp |              |      |      |            |             |
+|             _eq0000 |         Local|      |   17 |  2.306     |  2.374      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|       Out_5_not0001 |         Local|      |    1 |  0.000     |  1.211      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_20_not0001 |         Local|      |    1 |  0.000     |  0.591      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_CU_module/calci |              |      |      |            |             |
+|          cc_not0001 |         Local|      |    1 |  0.000     |  0.988      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|    memory_0_not0003 |         Local|      |    3 |  0.098     |  1.829      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_17_not0001 |         Local|      |    1 |  0.000     |  0.911      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|       Out_7_not0001 |         Local|      |    1 |  0.000     |  0.352      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_WindowManager/n |              |      |      |            |             |
+|     rd_0_cmp_gt0000 |         Local|      |    9 |  0.065     |  2.074      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_30_cm |              |      |      |            |             |
+|            p_eq0000 |         Local|      |   16 |  3.870     |  4.456      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_31_cm |              |      |      |            |             |
+|            p_eq0000 |         Local|      |   16 |  0.556     |  2.358      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_24_cm |              |      |      |            |             |
+|            p_eq0000 |         Local|      |   16 |  0.539     |  2.307      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_25_cm |              |      |      |            |             |
+|            p_eq0000 |         Local|      |   16 |  0.401     |  2.297      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_26_cm |              |      |      |            |             |
+|            p_eq0000 |         Local|      |   16 |  0.406     |  2.287      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_27_cm |              |      |      |            |             |
+|            p_eq0000 |         Local|      |   16 |  3.811     |  4.712      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_28_cm |              |      |      |            |             |
+|            p_eq0000 |         Local|      |   16 |  0.814     |  2.297      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_RegisterFile_mo |              |      |      |            |             |
+|dule/registers_29_cm |              |      |      |            |             |
+|            p_eq0000 |         Local|      |   17 |  0.605     |  2.356      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_10_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  0.055     |  1.793      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_11_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  0.217     |  1.953      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_20_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  0.538     |  1.430      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_12_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  1.325     |  1.946      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_21_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  1.078     |  1.953      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_13_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  0.510     |  1.949      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_30_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  0.406     |  1.538      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_22_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  1.399     |  1.974      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_14_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  0.565     |  1.146      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_31_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  0.911     |  1.225      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_23_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  1.470     |  2.373      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_15_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  0.674     |  2.432      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_24_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  0.052     |  1.568      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_16_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  0.050     |  1.944      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_25_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  0.780     |  1.637      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_17_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  0.051     |  1.877      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_26_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  0.459     |  1.086      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_18_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  0.235     |  2.046      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_27_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  0.061     |  1.514      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_19_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  1.122     |  1.849      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_28_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  1.254     |  2.137      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+|memory_29_cmp_eq0000 |              |      |      |            |             |
+|                     |         Local|      |    3 |  0.885     |  1.520      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_WindowManager/n |              |      |      |            |             |
+|        rd_5_not0001 |         Local|      |    1 |  0.000     |  1.125      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+| memory_1_cmp_eq0000 |         Local|      |    3 |  0.294     |  2.168      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+| memory_2_cmp_eq0000 |         Local|      |    3 |  0.050     |  1.924      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+| memory_3_cmp_eq0000 |         Local|      |    3 |  0.501     |  1.174      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+| memory_4_cmp_eq0000 |         Local|      |    3 |  0.062     |  1.879      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+| memory_5_cmp_eq0000 |         Local|      |    3 |  1.578     |  2.236      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+| memory_6_cmp_eq0000 |         Local|      |    3 |  0.054     |  1.947      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+| memory_7_cmp_eq0000 |         Local|      |    3 |  0.773     |  1.450      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+| memory_8_cmp_eq0000 |         Local|      |    3 |  0.533     |  1.441      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_DataMem_module/ |              |      |      |            |             |
+| memory_9_cmp_eq0000 |         Local|      |    3 |  0.052     |  1.509      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_23_not0001 |         Local|      |    1 |  0.000     |  0.649      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_24_not0001 |         Local|      |    1 |  0.000     |  0.352      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_28_not0001 |         Local|      |    1 |  0.000     |  0.984      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|       Out_3_not0001 |         Local|      |    1 |  0.000     |  0.853      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_WindowManager/n |              |      |      |            |             |
+|          o7_not0001 |         Local|      |    1 |  0.000     |  1.184      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_12_not0001 |         Local|      |    1 |  0.000     |  1.110      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|       Out_8_not0001 |         Local|      |    1 |  0.000     |  0.284      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_26_not0001 |         Local|      |    1 |  0.000     |  0.999      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_18_not0001 |         Local|      |    1 |  0.000     |  0.645      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|       Out_9_not0001 |         Local|      |    1 |  0.000     |  0.857      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_31_not0001 |         Local|      |    1 |  0.000     |  1.133      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_22_not0001 |         Local|      |    1 |  0.000     |  1.042      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_14_not0001 |         Local|      |    1 |  0.000     |  1.456      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_30_not0001 |         Local|      |    1 |  0.000     |  1.212      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|       Out_0_not0001 |         Local|      |    1 |  0.000     |  0.942      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_27_not0001 |         Local|      |    1 |  0.000     |  1.914      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_19_not0001 |         Local|      |    1 |  0.000     |  1.218      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_21_not0001 |         Local|      |    1 |  0.000     |  0.895      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_10_not0001 |         Local|      |    1 |  0.000     |  1.140      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|       Out_1_not0001 |         Local|      |    1 |  0.000     |  0.569      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_15_not0001 |         Local|      |    1 |  0.000     |  0.857      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_11_not0001 |         Local|      |    1 |  0.000     |  1.130      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|       Out_2_not0001 |         Local|      |    1 |  0.000     |  0.859      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_13_not0001 |         Local|      |    1 |  0.000     |  1.138      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_25_not0001 |         Local|      |    1 |  0.000     |  0.855      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_29_not0001 |         Local|      |    1 |  0.000     |  0.912      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|       Out_4_not0001 |         Local|      |    1 |  0.000     |  0.590      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_PSRModifier/NZV |              |      |      |            |             |
+|         C_0_not0001 |         Local|      |    1 |  0.000     |  0.346      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|      Out_16_not0001 |         Local|      |    1 |  0.000     |  0.635      |
++---------------------+--------------+------+------+------------+-------------+
+|Inst_ALU_module/data |              |      |      |            |             |
+|       Out_6_not0001 |         Local|      |    1 |  0.000     |  0.859      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net res | SETUP       |         N/A|     2.170ns|     N/A|           0
+  et_IBUF                                   | HOLD        |     1.380ns|            |       0|           0
+                                            | MINLOWPULSE |         N/A|     3.193ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     9.639ns|     N/A|           0
+  _IBUF                                     | HOLD        |     0.284ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.768ns|     N/A|           0
+  t_RegisterFile_module/registers_19_cmp_eq | HOLD        |     1.380ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.867ns|     N/A|           0
+  t_RegisterFile_module/registers_8_cmp_eq0 | HOLD        |     1.380ns|            |       0|           0
+  000                                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.302ns|     N/A|           0
+  t_RegisterFile_module/registers_10_cmp_eq | HOLD        |     1.380ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.339ns|     N/A|           0
+  t_RegisterFile_module/registers_20_cmp_eq | HOLD        |     1.380ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.321ns|     N/A|           0
+  t_RegisterFile_module/registers_12_cmp_eq | HOLD        |     1.380ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     3.124ns|     N/A|           0
+  t_RegisterFile_module/registers_1_cmp_eq0 | HOLD        |     1.390ns|            |       0|           0
+  000                                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.769ns|     N/A|           0
+  t_RegisterFile_module/registers_22_cmp_eq | HOLD        |     1.380ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.736ns|     N/A|           0
+  t_RegisterFile_module/registers_14_cmp_eq | HOLD        |     1.380ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.298ns|     N/A|           0
+  t_RegisterFile_module/registers_3_cmp_eq0 | HOLD        |     1.380ns|            |       0|           0
+  000                                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.666ns|     N/A|           0
+  t_RegisterFile_module/registers_16_cmp_eq | HOLD        |     1.390ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.367ns|     N/A|           0
+  t_RegisterFile_module/registers_5_cmp_eq0 | HOLD        |     1.390ns|            |       0|           0
+  000                                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.731ns|     N/A|           0
+  t_RegisterFile_module/registers_18_cmp_eq | HOLD        |     1.380ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.491ns|     N/A|           0
+  t_RegisterFile_module/registers_7_cmp_eq0 | HOLD        |     1.380ns|            |       0|           0
+  000                                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.234ns|     N/A|           0
+  t_RegisterFile_module/registers_9_cmp_eq0 | HOLD        |     1.390ns|            |       0|           0
+  000                                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.760ns|     N/A|           0
+  t_RegisterFile_module/registers_11_cmp_eq | HOLD        |     1.380ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.339ns|     N/A|           0
+  t_RegisterFile_module/registers_21_cmp_eq | HOLD        |     1.380ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.866ns|     N/A|           0
+  t_RegisterFile_module/registers_13_cmp_eq | HOLD        |     1.380ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.742ns|     N/A|           0
+  t_RegisterFile_module/registers_2_cmp_eq0 | HOLD        |     1.380ns|            |       0|           0
+  000                                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.789ns|     N/A|           0
+  t_RegisterFile_module/registers_0_not0001 | HOLD        |     1.380ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.743ns|     N/A|           0
+  t_RegisterFile_module/registers_23_cmp_eq | HOLD        |     1.380ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.979ns|     N/A|           0
+  t_RegisterFile_module/registers_15_cmp_eq | HOLD        |     1.380ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     3.200ns|     N/A|           0
+  t_RegisterFile_module/registers_4_cmp_eq0 | HOLD        |     1.380ns|            |       0|           0
+  000                                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.666ns|     N/A|           0
+  t_RegisterFile_module/registers_17_cmp_eq | HOLD        |     1.380ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.715ns|     N/A|           0
+  t_RegisterFile_module/registers_6_cmp_eq0 | HOLD        |     1.390ns|            |       0|           0
+  000                                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.276ns|     N/A|           0
+  t_DataMem_module/memory_0_not0003         | HOLD        |     1.380ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.364ns|     N/A|           0
+  t_RegisterFile_module/registers_30_cmp_eq | HOLD        |     1.381ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.827ns|     N/A|           0
+  t_RegisterFile_module/registers_31_cmp_eq | HOLD        |     1.390ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.783ns|     N/A|           0
+  t_RegisterFile_module/registers_24_cmp_eq | HOLD        |     1.380ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.804ns|     N/A|           0
+  t_RegisterFile_module/registers_25_cmp_eq | HOLD        |     1.390ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.321ns|     N/A|           0
+  t_RegisterFile_module/registers_26_cmp_eq | HOLD        |     1.380ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.933ns|     N/A|           0
+  t_RegisterFile_module/registers_27_cmp_eq | HOLD        |     1.380ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.942ns|     N/A|           0
+  t_RegisterFile_module/registers_28_cmp_eq | HOLD        |     1.380ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.308ns|     N/A|           0
+  t_RegisterFile_module/registers_29_cmp_eq | HOLD        |     1.387ns|            |       0|           0
+  0000                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.015ns|     N/A|           0
+  t_DataMem_module/memory_10_cmp_eq0000     | HOLD        |     1.380ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.347ns|     N/A|           0
+  t_DataMem_module/memory_11_cmp_eq0000     | HOLD        |     1.420ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.276ns|     N/A|           0
+  t_DataMem_module/memory_20_cmp_eq0000     | HOLD        |     1.390ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.696ns|     N/A|           0
+  t_DataMem_module/memory_12_cmp_eq0000     | HOLD        |     1.496ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.146ns|     N/A|           0
+  t_DataMem_module/memory_21_cmp_eq0000     | HOLD        |     1.380ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.838ns|     N/A|           0
+  t_DataMem_module/memory_13_cmp_eq0000     | HOLD        |     1.560ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.713ns|     N/A|           0
+  t_DataMem_module/memory_30_cmp_eq0000     | HOLD        |     1.544ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.145ns|     N/A|           0
+  t_DataMem_module/memory_22_cmp_eq0000     | HOLD        |     1.498ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.046ns|     N/A|           0
+  t_DataMem_module/memory_14_cmp_eq0000     | HOLD        |     1.380ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.298ns|     N/A|           0
+  t_DataMem_module/memory_31_cmp_eq0000     | HOLD        |     1.436ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.298ns|     N/A|           0
+  t_DataMem_module/memory_23_cmp_eq0000     | HOLD        |     1.397ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.692ns|     N/A|           0
+  t_DataMem_module/memory_15_cmp_eq0000     | HOLD        |     1.420ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.074ns|     N/A|           0
+  t_DataMem_module/memory_24_cmp_eq0000     | HOLD        |     1.380ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.230ns|     N/A|           0
+  t_DataMem_module/memory_16_cmp_eq0000     | HOLD        |     1.516ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.376ns|     N/A|           0
+  t_DataMem_module/memory_25_cmp_eq0000     | HOLD        |     1.483ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.298ns|     N/A|           0
+  t_DataMem_module/memory_17_cmp_eq0000     | HOLD        |     1.380ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     1.948ns|     N/A|           0
+  t_DataMem_module/memory_26_cmp_eq0000     | HOLD        |     1.380ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.298ns|     N/A|           0
+  t_DataMem_module/memory_18_cmp_eq0000     | HOLD        |     1.535ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.667ns|     N/A|           0
+  t_DataMem_module/memory_27_cmp_eq0000     | HOLD        |     1.390ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.176ns|     N/A|           0
+  t_DataMem_module/memory_19_cmp_eq0000     | HOLD        |     1.390ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.074ns|     N/A|           0
+  t_DataMem_module/memory_28_cmp_eq0000     | HOLD        |     1.475ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.064ns|     N/A|           0
+  t_DataMem_module/memory_29_cmp_eq0000     | HOLD        |     1.380ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.184ns|     N/A|           0
+  t_DataMem_module/memory_1_cmp_eq0000      | HOLD        |     1.380ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.312ns|     N/A|           0
+  t_DataMem_module/memory_2_cmp_eq0000      | HOLD        |     1.546ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.723ns|     N/A|           0
+  t_DataMem_module/memory_3_cmp_eq0000      | HOLD        |     1.575ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.176ns|     N/A|           0
+  t_DataMem_module/memory_4_cmp_eq0000      | HOLD        |     1.498ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.110ns|     N/A|           0
+  t_DataMem_module/memory_5_cmp_eq0000      | HOLD        |     1.390ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.146ns|     N/A|           0
+  t_DataMem_module/memory_6_cmp_eq0000      | HOLD        |     1.483ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.153ns|     N/A|           0
+  t_DataMem_module/memory_7_cmp_eq0000      | HOLD        |     1.390ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.150ns|     N/A|           0
+  t_DataMem_module/memory_8_cmp_eq0000      | HOLD        |     1.380ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Ins | SETUP       |         N/A|     2.073ns|     N/A|           0
+  t_DataMem_module/memory_9_cmp_eq0000      | HOLD        |     1.380ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 1 mins 10 secs 
+Total CPU time to PAR completion: 1 mins 6 secs 
+
+Peak Memory Usage:  362 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 30
+Number of info messages: 2
+
+Writing design to file Processor.ncd
+
+
+
+PAR done!

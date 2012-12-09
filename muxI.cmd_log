@@ -1,0 +1,1 @@
+vhdtdtfi -prj Core_iDeivid -o F:/Documentos/Arquitectura/Processor/muxI.vhi -module muxI -template F:/Windows/ISE/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work muxI.vhd 

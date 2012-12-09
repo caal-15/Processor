@@ -1,6 +1,6 @@
 ISim log file
-Running: /home/pin3da/Repos/Processor/tb_Processor_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/pin3da/Repos/Processor/tb_Processor_isim_beh.wdb 
-ISim P.28xd (signature 0x54af6ca1)
+Running: F:\Documentos\Arquitectura\Processor\tb_Processor_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb F:/Documentos/Arquitectura/Processor/tb_Processor_isim_beh.wdb 
+ISim P.28xd (signature 0xa0883be4)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
@@ -11,34 +11,14 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /tb_processor/uut/Inst_ADDER1_module/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-at 0 ps, Instance /tb_processor/uut/Inst_InstMemory_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 0 ps, Instance /tb_processor/uut/Inst_RegisterFile_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 0 ps, Instance /tb_processor/uut/Inst_RegisterFile_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 0 ps, Instance /tb_processor/uut/Inst_RegisterFile_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 Finished circuit initialization process.
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# run 100ns
-# exit 0
+# restart
+# run 700ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_processor/uut/Inst_RegisterFile_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /tb_processor/uut/Inst_RegisterFile_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /tb_processor/uut/Inst_RegisterFile_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
