@@ -82,10 +82,10 @@ begin
 				ALUOP <= X"19";
 				RdEnMem <= '1';--activa lectura en memoria
 				WrEnMem <= '0';
-				RFsource <= "01";--selecciona dato de memoria como datatoreg
+				RFsource <= "00";--selecciona dato de memoria como datatoreg
 			   wren<='1';
 			when "000100" =>--store word
-				ALUOP <= x"20";
+				ALUOP <= x"1A";
 				WrEnMem <= '1';--activa escritura en memoria
 				RdEnMem <= '0';
 				

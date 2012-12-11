@@ -5,7 +5,7 @@ Command Line: F:\Windows\ISE\14.2\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 -intstyle ise -dd _ngo -nt timestamp -uc Chronometer.ucf -p xc3s500e-fg320-4
 Chronometer.ngc Chronometer.ngd
 
-Reading NGO file "F:/Documentos/Arquitectura/Processor/Chronometer.ngc" ...
+Reading NGO file "F:/Documentos/Electronica/Processor/Chronometer.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -27,10 +27,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 163500 kilobytes
+Total memory usage is 170924 kilobytes
 
 Writing NGD file "Chronometer.ngd" ...
-Total REAL time to NGDBUILD completion:  5 sec
-Total CPU time to NGDBUILD completion:   5 sec
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   6 sec
 
 Writing NGDBUILD log file "Chronometer.bld"...

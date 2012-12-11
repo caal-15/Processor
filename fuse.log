@@ -1,28 +1,28 @@
-Running: F:\Windows\ISE\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o F:/Documentos/Arquitectura/Processor/tb_Processor_isim_beh.exe -prj F:/Documentos/Arquitectura/Processor/tb_Processor_beh.prj work.tb_Processor 
+Running: F:\Windows\ISE\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o F:/Documentos/Electronica/Processor/tb_Processor_isim_beh.exe -prj F:/Documentos/Electronica/Processor/tb_Processor_beh.prj work.tb_Processor 
 ISim P.28xd (signature 0xa0883be4)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "F:/Documentos/Arquitectura/Processor/WindowManager.vhd" into library work
-Parsing VHDL file "F:/Documentos/Arquitectura/Processor/SEU_module.vhd" into library work
-Parsing VHDL file "F:/Documentos/Arquitectura/Processor/SEU22_module.vhd" into library work
-Parsing VHDL file "F:/Documentos/Arquitectura/Processor/RegisterFile_module.vhd" into library work
-Parsing VHDL file "F:/Documentos/Arquitectura/Processor/PSR_module.vhd" into library work
-Parsing VHDL file "F:/Documentos/Arquitectura/Processor/PSRModifier.vhd" into library work
-Parsing VHDL file "F:/Documentos/Arquitectura/Processor/PC_module.vhd" into library work
-Parsing VHDL file "F:/Documentos/Arquitectura/Processor/MUX4_module.vhd" into library work
-Parsing VHDL file "F:/Documentos/Arquitectura/Processor/MUX3_module.vhd" into library work
-Parsing VHDL file "F:/Documentos/Arquitectura/Processor/MUX2_module.vhd" into library work
-Parsing VHDL file "F:/Documentos/Arquitectura/Processor/MUX1_module.vhd" into library work
-Parsing VHDL file "F:/Documentos/Arquitectura/Processor/InstMemory_module.vhd" into library work
-Parsing VHDL file "F:/Documentos/Arquitectura/Processor/DataMem_module.vhd" into library work
-Parsing VHDL file "F:/Documentos/Arquitectura/Processor/CU_module.vhd" into library work
-Parsing VHDL file "F:/Documentos/Arquitectura/Processor/ALU_module.vhd" into library work
-Parsing VHDL file "F:/Documentos/Arquitectura/Processor/ADDER3_module.vhd" into library work
-Parsing VHDL file "F:/Documentos/Arquitectura/Processor/ADDER2_module.vhd" into library work
-Parsing VHDL file "F:/Documentos/Arquitectura/Processor/ADDER1_module.vhd" into library work
-Parsing VHDL file "F:/Documentos/Arquitectura/Processor/Processor.vhd" into library work
-Parsing VHDL file "F:/Documentos/Arquitectura/Processor/tb_Processor.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/Processor/WindowManager.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/Processor/SEU_module.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/Processor/SEU22_module.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/Processor/RegisterFile_module.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/Processor/PSR_module.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/Processor/PSRModifier.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/Processor/PC_module.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/Processor/MUX4_module.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/Processor/MUX3_module.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/Processor/MUX2_module.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/Processor/MUX1_module.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/Processor/InstMemory_module.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/Processor/DataMem_module.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/Processor/CU_module.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/Processor/ALU_module.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/Processor/ADDER3_module.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/Processor/ADDER2_module.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/Processor/ADDER1_module.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/Processor/Processor.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/Processor/tb_Processor.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
@@ -53,8 +53,8 @@ Compiling architecture arch_wm of entity WindowManager [windowmanager_default]
 Compiling architecture behavioral of entity Processor [processor_default]
 Compiling architecture behavior of entity tb_processor
 Time Resolution for simulation is 1ps.
-Waiting for 18 sub-compilation(s) to finish...
+Waiting for 17 sub-compilation(s) to finish...
 Compiled 46 VHDL Units
-Built simulation executable F:/Documentos/Arquitectura/Processor/tb_Processor_isim_beh.exe
-Fuse Memory Usage: 37932 KB
-Fuse CPU Usage: 1247 ms
+Built simulation executable F:/Documentos/Electronica/Processor/tb_Processor_isim_beh.exe
+Fuse Memory Usage: 37920 KB
+Fuse CPU Usage: 1232 ms

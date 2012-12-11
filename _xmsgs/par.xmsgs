@@ -11,23 +11,157 @@
 <msg type="warning" file="Place" num="414" delta="old" >The input design contains local clock signal(s). To get a better result, we recommend users run map with the &quot;-timing&quot; option set before starting the placement.
 </msg>
 
-<msg type="warning" file="Place" num="1263" delta="old" >Initial clock placement failed. Clock placer will be attempted again with the local clock templates disabled. Please check the clock skew numbers of the local clocks in your design to ensure they are acceptable.
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_2_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">8</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
 </msg>
 
-<msg type="error" file="Place" num="1138" delta="old" >Automatic clock placement failed. Please attempt to analyze the global clocking required for this design and either lock the clock placement or area locate the logic driven by the clocks so that the clocks may be placed in such a way that all logic driven by them may be routed. The main restriction on clock placement is that only one clock output signal for any competing Global / Side pair of clocks may enter any region. For further information see the &quot;Quadrant Clock Routing&quot; section in the <arg fmt="%s" index="1">Spartan3e</arg> Family Datasheet.
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">reset_c_IBUF</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">2</arg> CLK pins and <arg fmt="%d" index="3">1939</arg> NON_CLK pins failed to route using a CLK template.
 </msg>
 
-<msg type="warning" file="ParHelpers" num="360" delta="old" >Design is not completely routed.
-
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_3_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">16</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
 </msg>
 
-<msg type="warning" file="Par" num="100" delta="old" >Design is not completely routed. There are <arg fmt="%d" index="1">4731</arg> signals that are not
-completely routed in this design. See the &quot;<arg fmt="%s" index="2">Chronometer.unroutes</arg>&quot; file for a list of
-all unrouted signals. Check for other warnings in your PAR report that might
-indicate why these nets are unroutable. These nets can also be evaluated
-in FPGA Editor by selecting &quot;Unrouted Nets&quot; in the List Window.
-
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_4_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">16</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
 </msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_5_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">16</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_6_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">16</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_7_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">16</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_8_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">16</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_9_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">2</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_RegisterFile_module/registers_30_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">3</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_RegisterFile_module/registers_18_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">3</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_RegisterFile_module/registers_26_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">5</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_RegisterFile_module/registers_28_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">2</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_RegisterFile_module/registers_5_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">1</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_10_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">7</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_11_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">16</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_12_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">16</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_13_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">3</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_21_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">16</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_14_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">12</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_22_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">16</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_30_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">16</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_15_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">16</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_23_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">16</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_31_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">16</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_25_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">3</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_18_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">2</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_26_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">7</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_27_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">16</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_28_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">16</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_WindowManager/nrd_0_cmp_gt0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">0</arg> CLK pins and <arg fmt="%d" index="3">4</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_0_not0003</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">1</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/memory_1_cmp_eq0000</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">2</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">Inst_Processor/Inst_DataMem_module/DataToMem_not0001</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">1</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">Inst_Div50Mto05/clkout</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">3</arg> CLK pins and <arg fmt="%d" index="3">1</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="ParHelpers" num="79" delta="old" >
+The following Clock signals are not routed on the dedicated
+global clock routing resources. This will usually result in
+longer delays and higher skew for the clock load pins. This could
+be the result of incorrect clock placement, more than 8 clocks
+feeding logic in a single quadrant of the device, or incorrect
+logic partitioning into the quadrant(s). Check the timing report
+to verify the delay and skew for this net
+</msg>
+
+<msg type="info" file="Timing" num="2761" delta="old" >N/A entries in the Constraints List may indicate that the constraint is not analyzed due to the following: No paths covered by this constraint; Other constraints intersect with this constraint; or This constraint was disabled by a Path Tracing Control. Please run the Timespec Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.</msg>
 
 </messages>
 

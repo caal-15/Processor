@@ -23,7 +23,7 @@
 #endif
 extern char *STD_TEXTIO;
 static const char *ng1 = "ramfile";
-static const char *ng2 = "F:/Documentos/Arquitectura/Processor/InstMemory_module.vhd";
+static const char *ng2 = "F:/Documentos/Electronica/Processor/InstMemory_module.vhd";
 extern char *IEEE_P_2592010699;
 extern char *IEEE_P_3620187407;
 
@@ -247,7 +247,7 @@ LAB7:    xsi_set_current_line(41, ng2);
     t3 = *((char **)t1);
     t1 = (t0 + 1352U);
     t4 = *((char **)t1);
-    t1 = (t0 + 5456U);
+    t1 = (t0 + 5448U);
     t14 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t4, t1);
     t15 = (t14 - 0);
     t16 = (t15 * 1);

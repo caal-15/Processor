@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2012-12-07T17:37:51</DateModified>
+  <DateModified>2012-12-10T09:32:54</DateModified>
   <ModuleName>Chronometer</ModuleName>
-  <SummaryTimeStamp>2012-12-07T17:29:09</SummaryTimeStamp>
-  <SavedFilePath>F:/Documentos/Arquitectura/Processor/iseconfig/Chronometer.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>F:/Documentos/Arquitectura/Processor\</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2012-12-10T08:04:31</SummaryTimeStamp>
+  <SavedFilePath>F:/Documentos/Electronica/Processor/iseconfig/Chronometer.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>F:/Documentos/Electronica/Processor\</ImplementationReportsDirectory>
   <DateInitialized>2012-12-07T14:16:25</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

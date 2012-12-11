@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "F:/Documentos/Arquitectura/Processor/ADDER1_module.vhd";
+static const char *ng0 = "F:/Documentos/Electronica/Processor/ADDER1_module.vhd";
 extern char *IEEE_P_3620187407;
 
 char *ieee_p_3620187407_sub_436279890_3965413181(char *, char *, char *, char *, int );
@@ -48,7 +48,7 @@ LAB0:    xsi_set_current_line(15, ng0);
 
 LAB3:    t2 = (t0 + 1032U);
     t3 = *((char **)t2);
-    t2 = (t0 + 4336U);
+    t2 = (t0 + 4332U);
     t4 = ieee_p_3620187407_sub_436279890_3965413181(IEEE_P_3620187407, t1, t3, t2, 1);
     t5 = (t1 + 12U);
     t6 = *((unsigned int *)t5);

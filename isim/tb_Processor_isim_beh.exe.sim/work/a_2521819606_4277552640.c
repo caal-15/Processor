@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "F:/Documentos/Arquitectura/Processor/PSRModifier.vhd";
+static const char *ng0 = "F:/Documentos/Electronica/Processor/PSRModifier.vhd";
 
 
 
@@ -90,7 +90,7 @@ LAB0:    xsi_set_current_line(37, ng0);
 LAB4:    xsi_set_current_line(40, ng0);
     t1 = (t0 + 1672U);
     t2 = *((char **)t1);
-    t1 = (t0 + 5441);
+    t1 = (t0 + 5433);
     t3 = 1;
     if (32U == 32U)
         goto LAB8;
@@ -112,7 +112,7 @@ LAB7:    xsi_set_current_line(43, ng0);
 LAB6:    xsi_set_current_line(45, ng0);
     t1 = (t0 + 1512U);
     t2 = *((char **)t1);
-    t1 = (t0 + 5473);
+    t1 = (t0 + 5465);
     t4 = 1;
     if (8U == 8U)
         goto LAB20;
@@ -124,7 +124,7 @@ LAB22:    if (t4 == 1)
 
 LAB18:    t8 = (t0 + 1512U);
     t9 = *((char **)t8);
-    t8 = (t0 + 5481);
+    t8 = (t0 + 5473);
     t14 = 1;
     if (8U == 8U)
         goto LAB26;
@@ -140,7 +140,7 @@ LAB16:
 LAB15:    xsi_set_current_line(54, ng0);
     t1 = (t0 + 1512U);
     t2 = *((char **)t1);
-    t1 = (t0 + 5489);
+    t1 = (t0 + 5481);
     t4 = 1;
     if (8U == 8U)
         goto LAB44;
@@ -152,7 +152,7 @@ LAB46:    if (t4 == 1)
 
 LAB42:    t8 = (t0 + 1512U);
     t9 = *((char **)t8);
-    t8 = (t0 + 5497);
+    t8 = (t0 + 5489);
     t14 = 1;
     if (8U == 8U)
         goto LAB50;
@@ -171,7 +171,7 @@ LAB3:    t1 = (t0 + 3312);
 
 LAB1:    return;
 LAB2:    xsi_set_current_line(38, ng0);
-    t1 = (t0 + 5437);
+    t1 = (t0 + 5429);
     t6 = (t0 + 3392);
     t7 = (t6 + 56U);
     t8 = *((char **)t7);

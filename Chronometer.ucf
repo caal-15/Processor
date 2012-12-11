@@ -3,15 +3,11 @@
 
 NET "clk_c" LOC = B8;
 NET "reset_c" LOC = H13;
-NET "displaySelector_c[0]" LOC = F17;
-NET "displaySelector_c[1]" LOC = H17;
-NET "displaySelector_c[2]" LOC = C18;
-NET "displaySelector_c[3]" LOC = F15;
-NET "dataout_c[0]" LOC = C17;
-NET "dataout_c[1]" LOC = H14;
-NET "dataout_c[2]" LOC = J17;
-NET "dataout_c[3]" LOC = G14;
-NET "dataout_c[4]" LOC = D16;
-NET "dataout_c[5]" LOC = D17;
-NET "dataout_c[6]" LOC = F18;
-NET "dataout_c[7]" LOC = L18;
+NET "dataout_c[0]" LOC = J14;
+NET "dataout_c[1]" LOC = J15;
+NET "dataout_c[2]" LOC = K15;
+NET "dataout_c[3]" LOC = K14;
+NET "dataout_c[4]" LOC = E17;
+NET "dataout_c[5]" LOC = P15;
+NET "dataout_c[6]" LOC = F4;
+NET "dataout_c[7]" LOC = R4;

@@ -28,7 +28,7 @@ architecture Behavioral of InstMemory_module is
 			end loop;
 			return RAM;
 		end function;
-signal RAM : RamType := InitRamFromFile("test2.data");
+signal RAM : RamType := InitRamFromFile("testalo.data");
 
 
 begin
